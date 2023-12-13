@@ -1,0 +1,215 @@
+.step-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.step-tab {
+  position: relative;
+  padding: 40rpx 80rpx;
+  font-size: 32rpx;
+  font-weight: 300;
+  &.active {
+    font-weight: 500;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 20rpx;
+      left: 0;
+      right: 0;
+      width: 50rpx;
+      height: 4rpx;
+      margin: 0 auto;
+      background-color: $text;
+    }
+  }
+}
+
+// 用户信息项
+.linker-info {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 40rpx;
+}
+.linker-avatar-box {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.linker-avatar {
+  width: 80rpx;
+}
+.linker-username {
+  font-size: 32rpx;
+  font-weight: 300;
+}
+
+
+// 筛选项
+.filter-box {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 40rpx;
+}
+.filter-date {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 80rpx;
+  padding: 20rpx;
+  border: 1rpx solid $border_color;
+  white-space: nowrap;
+  background-color: #fff;
+}
+.filter-date-val {
+  flex: 1;
+  width: 80rpx;
+}
+.filter-date-placeholder {
+  flex: 1;
+  width: 80rpx;
+  color: $placeholder;
+}
+.filter-date-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.filter-reset {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 60rpx;
+}
+
+
+.tab-page-scroll,
+.list-box {
+  height: 100%;
+  overflow: hidden;
+}
+.step {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background-color: #fff;
+}
+
+.user-step-list {
+  padding-top: 1rpx;
+}
+
+// 我的足迹
+.step-date {
+  padding: 40rpx 40rpx 0 40rpx;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+.user-step-goods-img-box {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+}
+.user-step-goods-img {
+  width: 160rpx;
+}
+.user-step-shopcar-icon {
+  position: absolute;
+  bottom: 3rpx;
+  left: 3rpx;
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+}
+.user-step-goods-infos {
+  flex: 1;
+  width: 80rpx;
+}
+.user-step-goods-title {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.user-step-goods-info {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.user-step-goods-vals {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+}
+.user-step-goods-val {
+  margin-right: 20rpx;
+  font-size: 32rpx;
+  color: $val;
+}
+.user-step-goods-val-unactive {
+  font-size: 24rpx;
+  text-decoration: line-through;
+  color: $tips;
+}
+.user-step-goods-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  line-height: 1.4;
+  color: #fff;
+  background-color: $btnbg_sub;
+  overflow: hidden;
+  &:after {
+    outline: none;
+  }
+}
+.user-step-share {
+  display: block;
+  width: 36rpx;
+  height: 36rpx;
+}
+.user-step-time {
+  font-size: 24rpx;
+  color: $third_text;
+}
+
+
+// 其他足迹样式
+.user-step-other {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.user-step-other-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160rpx;
+  height: 55rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+}
+.user-step-other-img {
+  width: 55rpx;
+  height: 55rpx;
+}
+.user-step-other-infos {
+  flex: 1;
+  width: 80rpx;
+}
+.user-step-other-time {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: $third_text;
+}

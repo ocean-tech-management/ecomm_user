@@ -1,0 +1,105 @@
+.sign-forms {
+  margin-bottom: 30rpx;
+  padding: 25rpx 40rpx;
+  background-color: #fff;
+}
+.sign-form-item {
+  position: relative;
+  display: flex;
+  margin-top: 25rpx;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: $border_color;
+    transform: scaleY(.5);
+  }
+  &:last-child:after {
+    opacity: 0;
+  }
+}
+
+// 表单项目
+.sign-input {
+  flex: 1;
+  height: 1.4em;
+  padding: 25rpx;
+  line-height: 1.4em;
+}
+.sign-label {
+  width: 180rpx;
+  padding: 25rpx 7rpx;
+}
+.sign-picker {
+  flex: 1;
+  width: 80rpx;
+}
+.sign-picker-content {
+  display: flex;
+  align-items: center;
+  height: 1.4em;
+  padding: 25rpx;
+  line-height: 1.4em;
+}
+.sign-picker-name {
+  flex: 1;
+}
+.sign-picker-placeholder {
+  flex: 1;
+  color: $tips;
+}
+.sign-picker-arrow {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.get-code {
+  width: 150rpx;
+  padding: 25rpx 0;
+  margin-left: 20rpx;
+  text-align: center;
+  color: $tips;
+  &.able {
+    color: #206be2;
+  }
+}
+
+.sign-ctrl {
+  padding: 20rpx 30rpx;
+  margin: 0 60rpx;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: $btntext;
+  background-color: $btnbg;
+}
+
+// 协议
+.sign-license {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.sign-license-accept {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 20rpx;
+}
+.sign-license-accept-icon {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+}
+.sign-license-tips {
+  color: $tips;
+}
+.link-color {
+  color: #206be2;
+}

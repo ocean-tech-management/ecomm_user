@@ -1,0 +1,336 @@
+$overview_text: $text;
+$tag_active: $primary;
+
+.warning-color {
+  color: #e6a23c;
+}
+/* 个人信息区域 */
+.total-wrapper {
+  position: relative;
+  height: 312rpx;
+  margin: 20rpx;
+  border-radius: 26rpx;
+  color: $primary_text;
+  // 动态标记点
+  background-image: linear-gradient(-8deg, #EBCB9F 1%, #F7E9D1 100%);
+  box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,0.06); 
+}
+.total-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.total-box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 30rpx 40rpx;
+  overflow: hidden;
+  /* background-color: #ccc; */
+}
+
+
+.total {
+  flex: 1;
+  width: 80rpx;
+}
+.total-val {
+  height: 1.4em;
+  font-size: 46rpx;
+  // font-family: 'AGP';
+  font-weight: 500;
+  color: $overview_text;
+}
+.total-title {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $overview_text;  //在上面
+}
+.withdraw-btn {
+  padding: 14rpx 50rpx;
+  border: 1rpx solid #a4740d;
+  border-radius: 32rpx;
+  font-size: 26rpx;
+  // 动态标记点
+  background-color: #fff4e3;
+}
+
+
+.income-types {
+  display: flex;
+  align-items: center;
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 16rpx;
+  background-color: $content_bg;
+}
+.income-type {
+  flex: 1;
+  padding: 30rpx;
+  text-align: center;
+}
+.income-type-val {
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.income-type-title {
+  margin-top: 3rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+}
+
+
+/* 分栏 */
+.income-other-totals {
+  display: flex;
+  white-space: nowrap;
+  font-size: 24rpx;
+}
+.income-other-total {
+  position: relative;
+  flex: 1;
+  width: 80rpx;
+  padding: 30rpx 50rpx;
+  font-weight: normal;
+  white-space: nowrap;
+  color: $overview_text;
+}
+.income-other-total-val {
+  height: 1.4em;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  // font-family: 'AGP';
+  color: $overview_text;
+}
+.income-other-total-title {
+  display: flex;
+  align-items: center;
+}
+.income-info-help {
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 10rpx;
+}
+.income-info-tips-up {
+  position: absolute;
+  bottom: 80%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.income-info-tips {
+  padding: 5rpx 10rpx;
+  margin: 0 auto;
+  font-size: 22rpx;
+  color: #fff;
+  background-color: #000;
+}
+.tips-arrow-up {
+  border-top: 10rpx solid #000;
+  border-bottom: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+}
+
+
+// 节点筛选项
+.income-tabs {
+  display: flex;
+  align-items: center;
+  margin: 0 20rpx;
+  border-radius: 16rpx;
+  white-space: nowrap;
+  color: #fff;
+  // 动态标记点
+  background-color: #000;
+}
+.income-tab {
+  position: relative;
+  flex: 1;
+  padding: 30rpx;
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: 500;
+}
+.income-tab.active {
+  color: $tag_active;
+}
+.income-tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+  width: 2em;
+  height: 5rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  background-color: $tag_active;
+}
+.income-tab-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.income-tab-range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30rpx 30rpx 30rpx 200rpx;
+}
+
+
+.income-filter-times {
+  position: relative;
+  height: 100rpx;
+  margin: 0 20rpx;
+}
+.income-filter-bg {
+  position: absolute;
+  top: -16rpx;
+  left: 0;
+  right: 0;
+  padding: 46rpx 50rpx 30rpx 50rpx;
+  border-radius: 0 0 16rpx 16rpx;
+  background-color: #fff;
+  z-index: -1;
+}
+
+
+// 一行展示的信息
+.team-incomes-rows {
+  display: flex;
+  align-items: center;
+  margin: 30rpx;
+  padding: 45rpx 50rpx;
+  background-color: #fff;
+}
+.team-income-row-title {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.team-income-row-val {
+  flex: 1;
+  font-size: 36rpx;
+  font-weight: 500;
+  text-align: right;
+}
+
+//团队收益信息
+.team-incomes {
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx 20rpx;
+  margin-bottom: 2rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+.team-income-top {
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.team-income-title {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.team-income-estimate {
+  flex: 1;
+  font-size: 34rpx;
+  font-weight: 500;
+  text-align: right;
+}
+.team-income-list {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15rpx;
+  border-top: 1rpx solid $border_color;
+}
+.team-income-item {
+  position: relative;
+  width: 39%;
+  padding: 30rpx 30rpx 0 20rpx;
+  box-sizing: border-box;
+}
+.team-income-item-sm {
+  width: 20%;
+  padding: 30rpx 0 0 0;
+}
+.team-income-val {
+  font-size: 34rpx;
+}
+.team-income-price {
+  display: flex;
+  align-items: baseline;
+  height: 1.4em;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: $text;
+}
+.team-income-price-sign {
+  font-size: 24rpx;
+}
+.team-income-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+.team-income-help {
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 10rpx;
+}
+.income-info-tips-down {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.tips-arrow-down {
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid #000;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+}
+
+
+.income-enters {
+  margin: 20rpx 20rpx 180rpx 20rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+.income-enter {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30rpx;
+    right: 30rpx;
+    height: 2rpx;
+    background-color: $border_color;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+.kv-item {
+  padding: 30rpx;
+}
+.kv-key {
+  font-weight: 500;
+}

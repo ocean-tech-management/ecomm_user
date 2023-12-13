@@ -1,0 +1,133 @@
+.time-filter-bar {
+  padding: 20rpx;
+}
+.time-filter-trigger {
+  display: flex;
+  padding: 10rpx 20rpx;
+  border-radius: 32rpx;
+  background-color: #fff;
+}
+.time-filter-placeholder {
+  color: $placeholder;
+}
+.time-filter-val {
+  flex: 1;
+  width: 80rpx;
+  margin: 0 20rpx;
+}
+.time-filter-icon,
+.time-filter-search {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+
+/* tab */
+.tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1rpx solid $border_color;
+  overflow-x: auto;
+  overflow-y: visible;
+  background-color: #fff;
+}
+.tab {
+  flex: 1;
+  padding: 30rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+.tab.active {
+  position: relative;
+  color: $vip_primary;
+}
+.tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1rpx;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 4em;
+  height: 4rpx;
+  margin: 0 auto;
+  background-color: $vip_primary;
+  z-index: 1;
+}
+.tab-page-scroll {
+  font-weight: normal;
+  background-color: #fff;
+}
+.list-box {
+  height: 100%;
+  background-color: #fff;
+}
+
+
+/* 收入列表 */
+.income {
+  position: relative;
+  padding: 30rpx 40rpx;
+}
+
+.income::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // left: 40rpx;
+  // right: 40rpx;
+  height: 1px;
+  background-color: $border_color;
+}
+.income-content {
+  display: flex;
+}
+.income-info {
+  flex: 1;
+  width: 80rpx;
+  white-space: nowrap;
+}
+.income-desc {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-desc-item {
+  display: flex;
+  align-items: center;
+  margin-top: 5rpx;
+  color: $tips;
+}
+.income-desc-orderid {
+  flex: 1;
+  width: 80rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-create-time {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-val {
+  text-align: right;
+  font-weight: 500;
+  color: $vip_primary;
+}
+.income-desc-orderval {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-less {
+  color: $tips;
+}
+
+.income-info-extend {
+  // display: flex;
+}

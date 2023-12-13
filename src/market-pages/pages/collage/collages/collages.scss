@@ -1,0 +1,190 @@
+.collage-tabs {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -16rpx 24rpx 0 rgba(0,0,0,0.08);
+}
+.collage-tab {
+  flex: 1;
+  width: 80rpx;
+  padding: 15rpx 30rpx 5rpx 30rpx;
+}
+.collage-tab-icon-box {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.collage-tab-icon {
+  width: 48rpx;
+  height: auto;
+}
+.collage-tab-title {
+  font-size: 20rpx;
+  text-align: center;
+}
+.collage-tab-title.active {
+  color: $primary;
+}
+
+// 拼团
+.collage-products {
+  height: 100%;
+}
+.collage-padding {
+  height: 10rpx;
+}
+.collage-product {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid $border_color;
+  background-color: #fff;
+}
+.collage-product:last-child {
+  border-bottom: 0;
+}
+.collage-product-img-box {
+  position: relative;
+  width: 280rpx;
+  height: 280rpx;
+  overflow: hidden;
+}
+.collage-product-img {
+  display: block;
+  width: 280rpx;
+  height: auto;
+}
+.collage-product-type-tag {
+  // 图片侧边的tag标志
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  padding: 5rpx 10rpx;
+  border-radius: 0 8rpx 8rpx 0;
+  font-size: 24rpx;
+  color: #fff;
+  // 动态标记点
+  background-image: linear-gradient(90deg, #F76A79 0%, #F18C62 100%);
+}
+.collage-product-sell-out {
+  // 已售罄的样式
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 32rpx;
+  font-weight: 300;
+  color: #fff;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,.5);
+}
+.collage-product-info {
+  flex: 1;
+  width: 80rpx;
+  padding: 0 0 0 30rpx;
+}
+.collage-product-title {
+  display: -webkit-box;
+  max-height: 2.8em;
+  font-size: 34rpx;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.collage-tag {
+  display: inline-block;
+  margin-right: 5rpx;
+  padding: 0 8rpx;
+  // border-radius: 30rpx;
+  font-size: 24rpx;
+  color: $primary_text;
+  background-color: $primary;
+}
+.collage-subtitle {
+  display: -webkit-box;
+  height: 2.8em;
+  margin-top: 10rpx;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 300;
+  color: $tips;
+  overflow: hidden;
+}
+.collage-info {
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.collage-info-avatars {
+  display: flex;
+  align-items: center;
+}
+.collage-product-avatar {
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: -24rpx;
+}
+.collage-product-avatar:first-child {
+  margin-left: 0;
+}
+.collage-product-avatar-default {
+  display: block;
+  width: 73rpx;
+  height: 49rpx;
+}
+.collage-info-number {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 12rpx;
+}
+.collage-product-baseinfo {
+  display: flex;
+  margin-top: 30rpx;
+}
+.collage-product-vals {    
+  flex: 1;
+  width: 80rpx;
+  // display: flex;
+  // align-items: baseline;
+  // margin-top: 15rpx;
+  // font-size: 24rpx;
+}
+.collage-product-val {
+  // font-family: 'AGP';
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.collage-product-val-unactive {
+  font-size: 24rpx;
+  text-decoration: line-through;
+  color: #9c9c9c;
+}
+
+.collage-product-ctrls {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.collage-product-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 173rpx;
+  height: 57rpx;
+  border-radius: 5rpx;
+  color: $btntext;
+  background-color: $btnbg;
+}
+
+// 拼团结束

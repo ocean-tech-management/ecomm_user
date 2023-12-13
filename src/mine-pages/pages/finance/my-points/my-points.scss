@@ -1,0 +1,158 @@
+
+
+/* 个人信息区域 */
+.total-box {
+  position: relative;
+  padding: 40rpx;
+  height: 310rpx;
+  overflow: hidden;
+}
+
+.total-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 390rpx;
+  overflow: hidden;
+  z-index: 0;
+}
+.total {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 170rpx 40rpx 60rpx 40rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.total-val {
+  margin-top: 20rpx;
+  font-size: 68rpx;
+  font-weight: 500;
+  color: $val;
+}
+.total-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  font-weight: normal;
+}
+.total-val-as-money {
+  position: absolute;
+  top: -5rpx;
+  left: 100%;
+  padding: 2rpx 20rpx;
+  border-radius: 20rpx 20rpx 20rpx 0;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: $primary_text;
+  background-color: $primary;
+}
+
+
+/* tab */
+.tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20rpx;
+  overflow-x: auto;
+  border-bottom: 1rpx solid #ccc;
+  background-color: #fff;
+}
+.tab {
+  flex: 1;
+  padding: 30rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+.tab.active {
+  position: relative;
+  color: $primary;
+}
+.tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: 15rpx;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 4em;
+  height: 4rpx;
+  margin: 0 auto;
+  background-color: $primary;
+}
+
+.tab-page-scroll {
+  font-weight: normal;
+  background-color: #fff;
+}
+.list-box {
+  height: 100%;
+  background-color: #fff;
+}
+
+
+/* 收入列表 */.income {
+  position: relative;
+  display: flex;
+  padding: 30rpx 40rpx;
+}
+
+.income::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 1rpx;
+  background-color: $border_color;
+}
+.income-info {
+  flex: 1;
+  width: 80rpx;
+  white-space: nowrap;
+}
+.income-desc {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-desc-item {
+  display: flex;
+  align-items: center;
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-desc-orderid {
+  flex: 1;
+  width: 80rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-create-time {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-val {
+  text-align: right;
+  font-weight: 500;
+  color: #e2283d;
+}
+.income-desc-orderval {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-less {
+  color: $tips;
+}
+

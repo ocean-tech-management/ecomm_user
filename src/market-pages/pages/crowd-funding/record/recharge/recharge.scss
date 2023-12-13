@@ -1,0 +1,45 @@
+.tab-page-scroll {
+  height: 100%;
+}
+
+.list-box {
+  height: 100%;
+  background-color: #fff;
+}
+.data-list {
+  background-color: #fff;
+}
+.data-item {
+  position: relative;
+  padding: 20rpx 40rpx;
+  &:not(:last-child):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40rpx;
+    right: 40rpx;
+    height: 2rpx;
+    background-color: $border_color;
+    transform: translateY(.5);
+  }
+}
+.data-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.data-name {
+  flex: 1;
+  width: 80rpx;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.data-val {
+  font-weight: 500;
+}
+.data-info {
+  font-size: 26rpx;
+  color: $tips;
+}

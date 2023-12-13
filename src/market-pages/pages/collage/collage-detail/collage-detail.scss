@@ -1,0 +1,385 @@
+.collage-info {
+  padding: 60rpx 40rpx 40rpx 40rpx;
+  text-align: center;
+  background-color: #fff;
+}
+.collage-status {
+  font-size: 46rpx;
+  font-weight: 500;
+}
+.collage-tips {
+  margin-top: 10rpx;
+  color: $tips;
+}
+.collage-users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+}
+.collage-user {
+  position: relative;
+  width: 88rpx;
+  height: 88rpx;
+  margin: 10rpx 15rpx;
+  border-radius: 44rpx;
+}
+.collage-user-avatar {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  overflow: hidden;
+}
+.collage-user-tag {
+  position: absolute;
+  bottom: -10rpx;
+  left: 0;
+  right: 0;
+  width: 80rpx;
+  margin: 0 auto;
+  // border-radius: 15rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: $theme_text;
+  // 动态标记点
+  background-color: $theme_bg;
+}
+.collage-unpay-tag {
+  position: absolute;
+  bottom: -8rpx;
+  left: 0;
+  right: 0;
+  width: 80rpx;
+  margin: 0 auto;
+  // border-radius: 15rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: $text;
+  background-color: $border_color;
+}
+
+.collage-timeouts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.collage-timeout-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42rpx;
+  color: #fff;
+  background-color: #000;
+}
+.collage-timeout-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42rpx;
+  color: #fff;
+  background-color: #aa211a;
+}
+
+
+.collage-info-ctrls {
+  margin-top: 20rpx;
+}
+.collage-info-ctrl {
+  padding: 24rpx;
+  margin: 20rpx 0;
+  border: 1px solid $border_color;
+  border-radius: 0;
+  font-size: 28rpx;
+  line-height: 1.4;
+  text-align: center;
+}
+.collage-info-ctrl.primary {
+  // border-color: $btnbg;
+  border-color: $theme_bg;
+  color: $theme_text;
+  // background-color: $btnbg;
+  background-color: $theme_bg;
+}
+
+
+.order-infos {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.order-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  white-space: nowrap;
+}
+.order-info:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20rpx;
+  right: 20rpx;
+  height: 1px;
+  background-color: $border_color;
+}
+.order-info:last-child:after {
+  background-color: transparent;
+}
+.order-info-name {
+  color: #999;
+}
+.order-info-val {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 20rpx;
+  text-overflow: ellipsis;
+  text-align: right;
+  color: $secondary_text;
+  overflow: hidden;
+}
+.order-info-important {
+  color: $text;
+}
+
+.order-info-total {
+  display: flex;
+  align-items: center;
+  margin-top: 2rpx;
+  padding: 20rpx 30rpx 34rpx 30rpx;
+  font-weight: 500;
+  background-color: #fff;
+}
+.order-info-total-val {
+  flex: 1;
+  align-items: center;
+  text-align: right;
+  color: $val;
+}
+.order-info-arrow {
+  width: 1em;
+  height: 1em;
+}
+
+
+/* 推荐商品、感兴趣列表 */
+.recommands {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.recommand-tabs {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 0;
+}
+.recommand-tab {
+  position: relative;
+  flex: 1;
+  width: 80rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  padding: 20rpx;
+  text-align: center;
+}
+.recommand-tab.active {
+  color: $primary;
+}
+.recommand-tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 4em;
+  height: 5rpx;
+  margin: 0 auto;
+  color: $primary_text;
+  background-color: $primary;
+}
+
+
+.recommand-list {
+  display: flex;
+  overflow-x: auto;
+}
+.recommand-list::after {
+  content: '';
+  display: block;
+  width: 1rpx;
+}
+.recommand-item {
+  width: 224rpx;
+  max-width: 224rpx;
+  min-width: 224rpx;
+  padding: 20rpx 0;
+  margin-right: 10rpx;
+  white-space: nowrap;
+}
+.recommand-item:first-child {
+  margin-left: 30rpx;
+}
+.recommand-item:last-child {
+  margin-right: 30rpx;
+}
+.recommand-img-box {
+  display: flex;
+  align-items: center;
+  width: 224rpx;
+  height: 224rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  background-color: #ccc;
+}
+.recommand-img {
+  width: 224rpx;
+  height: auto;
+}
+.recommand-name {
+  margin-top: 30rpx;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.recommand-val {
+  margin-top: 10rpx;
+  text-overflow: ellipsis;
+  color: $val;
+  overflow: hidden;
+}
+.recommand-val-tags {
+  display: flex;
+  flex-wrap: wrap;
+  height: 42rpx;
+  margin-top: 5rpx;
+}
+.recommand-val-tag {
+  padding: 4rpx 15rpx;
+  border: 1px solid $val;
+  border-radius: 21rpx;
+  font-size: 24rpx;
+  color: $val;
+}
+
+// 其他拼团
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-item {
+  width: 345rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+.product-img-box {
+  display: flex;
+  align-items: center;
+  width: 345rpx;
+  height: 347rpx;
+  overflow: hidden;
+}
+.product-img {
+  width: 345rpx;
+  height: 347rpx;
+}
+.product-info {
+  padding: 20rpx 25rpx 30rpx 25rpx;
+  border: 1px solid $border_color;
+  border-radius: 0 0 12rpx 12rpx;
+}
+.product-title {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  color: #675951;
+  overflow: hidden;
+}
+.product-val-info {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10rpx;
+  font-weight: 500;  
+  color: #9F5022;
+}
+.product-sign {
+  line-height: 1;
+}
+.product-val {
+  font-size: 34rpx;
+  line-height: 1;
+}
+.product-tips {
+  margin-top: 13rpx;
+  font-size: 24rpx;
+  color: #a59489;
+}
+
+
+.other-collage-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.other-collage-info-avatars {
+  display: flex;
+  align-items: center;
+  height: 44rpx;
+}
+.other-collage-product-avatar {
+  display: block;
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: -24rpx;
+}
+.other-collage-product-avatar:first-child {
+  margin-left: 0;
+}
+.collage-product-avatar-default {
+  display: block;
+  width: 73rpx;
+  height: 49rpx;
+}
+.other-collage-info-number {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 12rpx;
+}
+
+
+.index-product-vals {
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+}
+.index-product-val {
+  color: $val;
+  font-weight: 500;
+}
+.index-product-val-unactive {
+  margin-left: 15rpx;
+  font-size: 24rpx;
+  color: $secondary_text;
+  text-decoration: line-through;
+}
+.collage-product-ctrls {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.collage-product-ctrl {
+  width: 106rpx;
+  padding: 10rpx 0;
+  border: 1px solid $primary;
+  border-radius: 30rpx;
+  text-align: center;
+  color: $primary_text;
+  background-color: $primary;
+}

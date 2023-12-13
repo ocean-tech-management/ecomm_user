@@ -1,0 +1,244 @@
+
+.order-filters {
+  position: relative;
+  display: flex;
+  height: 80rpx;
+  padding: 5rpx 30rpx;
+}
+.order-filter-types {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  background-color: $border_color;
+  overflow: hidden;
+}
+.order-filter-type {
+  width: 210rpx;
+  padding: 22rpx 0;
+  text-align: center;
+  color: $tips;
+}
+.order-filter-type.active {
+  color: $theme_text;
+  background-color: $theme_bg;
+}
+.hidden-price-trigger-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.order-extend-filters {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 40rpx 10rpx 40rpx;
+  font-size: 26rpx;
+}
+.order-extend-time-filter {
+  flex: 1;
+  width: 80rpx;
+  display: flex;
+  align-items: center;
+  // 动态标记点
+  border: 1rpx solid #ccc;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.order-extend-time-quickly {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  // 动态标记点
+  border-right: 1rpx solid #ccc;
+}
+.order-extend-quickly-vals {
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.order-extend-quickly-val {
+  width: 115rpx;
+}
+.order-extend-quickly-icon {
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+}
+.order-extend-time-trigger {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.order-extend-time-val {
+  flex: 1;
+  width: 80rpx;
+}
+.filter-time-icon {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+}
+
+
+.order-box {
+  height: 100%;
+}
+.order {
+  margin: 20rpx 25rpx 0 25rpx;
+  border-radius: 16rpx;
+  // 动态标记点
+  background-color: #fff;
+}
+.order-item {
+  position: relative;
+  font-size: 26rpx;
+  // 动态标记点
+  box-shadow: 0 0 20rpx 1rpx rgba(227,223,219,0.59);
+}
+.order-header {
+  display: flex;
+  padding: 20rpx;
+  color: $tips;
+}
+.order-base-infos {
+  flex: 1;
+  width: 80rpx;
+}
+.order-base-info-sm {
+  font-size: 24rpx;
+}
+.order-status {
+  color: $val;
+  .medius {
+    font-size: 500rpx;
+  }
+}
+.order-contents {
+  .order-content {
+    padding-top: 0;
+    padding-bottom: 30rpx;
+    &:first-child {
+      padding-top: 30rpx;
+    }
+  }
+  .order-item-img-box {
+    width: 160rpx;
+    height: 160rpx;
+  }
+  .order-item-img {
+    width: 160rpx;
+  }
+}
+.order-content {
+  position: relative;
+  display: flex;
+  padding: 20rpx;
+}
+.order-item-img-box {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.order-item-img {
+  width: 120rpx;
+  height: auto;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.order-item-info {
+  flex: 1;
+  width: 80rpx;
+}
+.order-base-info {
+  display: flex;
+  align-items: center;
+}
+.order-username {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.order-item-title {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 26rpx;
+  overflow: hidden;
+}
+.order-item-vals {
+  display: flex;
+  align-items: baseline;
+  margin-top: 55rpx;
+}
+.order-item-val {
+  font-size: 30rpx;
+  font-weight: 500;
+  // font-family: 'AGP';
+}
+.order-item-val-unactive {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  // font-family: 'AGP';
+  text-decoration: line-through;
+  color: $tips;
+}
+
+
+.order-sn-box {
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  font-size: 24rpx;
+}
+.order-sn {}
+.order-sn-copy {
+  margin-left: 20rpx;
+  padding: 20rpx 2rpx;
+  color: $val;
+}
+
+.order-extends {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-top: 1rpx solid $border_color;
+  font-size: 24rpx;
+  .order-sn-copy {
+    padding: 0 2rpx;
+  }
+}
+.order-result-colddown {
+  font-size: 26rpx;
+}
+.order-result-colddown-val {
+  color: $val;
+}
+.order-ctrls {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 80rpx;
+}
+.order-ctrl {
+  margin-left: 10rpx;
+  padding: 10rpx 30rpx;
+  border: 1rpx solid $text;
+  border-radius: 28rpx;
+  font-size: 24rpx;
+  color: $text;
+  &.primary {
+    color: $btntext;
+    border-color: $btnbg;
+    background-color: $btnbg;
+  }
+}

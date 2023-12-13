@@ -1,0 +1,35 @@
+.page-img-box {
+  width: 100%;
+  height: auto;
+}
+.page-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-btns {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.page-btn {
+  flex: 1;
+  width: 80rpx;
+  text-align: center;
+  padding: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: $btntext;
+  background-color: $btnbg;
+  &.error {
+    color: #fff;
+    background-color: #de401d;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

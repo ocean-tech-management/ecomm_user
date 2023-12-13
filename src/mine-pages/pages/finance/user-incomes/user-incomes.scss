@@ -1,0 +1,116 @@
+$overview_text: $text;
+$tag_active: $primary;
+
+.warning-color {
+  color: #e6a23c;
+}
+/* 个人信息区域 */
+.total-wrapper {
+  position: relative;
+  height: 338rpx;
+  color: #fff;
+  // 动态标记点
+  background-image: linear-gradient(123deg, #484A4F 0%, #1D1B20 100%);
+  box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,0.06); 
+}
+.total-incomes-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.total-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.total-box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 50rpx 50rpx 20rpx 50rpx;
+  overflow: hidden;
+  /* background-color: #ccc; */
+}
+
+
+.total {
+  flex: 1;
+  width: 80rpx;
+  // 动态标记点
+  color: #fff;
+}
+.total-val {
+  height: 1.4em;
+  font-size: 46rpx;
+  // font-family: 'AGP';
+  font-weight: 500;
+}
+.total-val-sign {
+  margin-left: 15rpx;
+  font-size: 24rpx;
+  vertical-align: baseline;
+}
+.total-title {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.to-withdraw-btn {
+}
+
+.income-total-ctrls {
+  display: flex;
+  margin-top: 40rpx;
+  padding: 0 50rpx;
+}
+.income-total-ctrl {
+  padding: 12rpx 50rpx;
+  border-radius: 33rpx;
+  font-size: 28rpx;
+  color: #000;
+  // 动态标记点
+  background-image: linear-gradient(180deg, #FBFBFB 0%, #DEDEDE 100%);
+}
+
+
+.entrance {
+  margin: 50rpx 20rpx 0 20rpx;
+}
+.entrance-title-box {
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.entrance-title {
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.entrance-arrow {
+  width: 1em;
+  height: 1em;
+}
+.income-total-consoles {
+  display: flex;
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  // 动态标记点
+  background-image: linear-gradient(164deg, #FFF27C 0%, #FFE046 98%);
+  box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,0.06);
+}
+.income-total-console {
+  flex: 1;
+  padding: 40rpx 10rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.income-total-console-val {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+.income-total-console-title {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}

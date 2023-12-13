@@ -1,0 +1,15 @@
+{
+  "configName": "jpzx",
+  "name": "集品严选",
+  "shareTitle": "美丽生活，点击开启",
+  "h5ShareTitle": "集品严选",
+  "h5ShareDesc": "好物底价",
+  "crowdBalanceName": "集品券",
+  "advanceBuyCardName": "集品卡",
+  "integralName": "集品豆",
+  "ticketBalance": "礼品券",
+  "maintainFilePath": "https://maintain-jpzx.xmsuiwei.top/maintain.json",
+  "href": "https://wx-jpzx.xmsuiwei.top",
+  "apiServiceInfo": "https://api-jpzx.xmxxs.top/api/v1",
+  "kuaishangOptions": "lhxKPGcPoGoXqerBmEY"
+}

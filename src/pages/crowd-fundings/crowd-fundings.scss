@@ -1,0 +1,379 @@
+.flex-page {
+  background: #F0E8E4 ;
+}
+.tab-page-scroll {
+  height: 100%;
+}
+
+.page-bg-box {
+  width: 100%;
+  height: 430rpx;
+  overflow: hidden;
+}
+.page-bg {
+  display: block;
+  width: 100%;
+  height: 430rpx;
+}
+.page-entrances {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-entrance {
+  width: 33.33%;
+  padding: 30rpx 0;
+  text-align: center;
+  background-color: #fff;
+}
+.page-entrance-image {
+  width: 100%;
+  height: 100%;
+}
+.page-entrance-bg-box {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.page-entrance-bg {
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+}
+.page-entrance-title {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #232323;
+}
+// 美丽金、美丽豆、礼品券活动列表
+.activity-entrances {
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+  .activity-entrance {
+    &:not(:first-child) {
+      margin-left: 20rpx;
+    }
+    width: 225rpx;
+    height: 204rpx;
+    border-radius: 16rpx;
+    background-color: #fff;
+    .activity-entrance-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+// 福利区
+.page-area-tabs-box {
+  height: 84rpx;
+  margin-top: 18rpx;
+  overflow: hidden;
+  .page-area-tabs {
+    display: flex;
+    padding-bottom: 30rpx;
+    background-color: #fff;
+    overflow-x: auto;
+    .page-area-tab {
+      flex: 1;
+      min-width: 186rpx;  //设置最小宽度
+      padding: 20rpx 20rpx 20rpx 20rpx;
+      font-weight: 500;
+      text-align: center;
+      font-size: 32rpx;
+      &.active {
+        font-weight: 600;
+        background-color: #FFCAAC;
+        color: #FF3001;
+      }
+      &.small-text {
+        font-size: 26rpx;
+      }
+    }
+  }
+}
+
+// 福利状态
+.page-status-tabs {
+  position: relative;
+  display: flex;
+  height: 136rpx;
+  padding: 34rpx 0 58rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  .page-status-tab {
+    flex: auto;
+    position: relative;
+    font-size: 28rpx;
+    text-align: center;
+    color: #1E1E1E;
+    &.active {
+      font-size: 32rpx;
+      font-weight: 600;
+      color: #FF3001;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -16rpx;
+        left: 0;
+        right: 0;
+        width: 0;
+        left: 0;
+        z-index: 1;
+        width: 38rpx;
+        height: 20rpx;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAUCAMAAADWUb86AAAA3lBMVEUAAAD5qFb5oFHfkjv8bi38ZCb/PAr5qFf/LwH6jEL7fDf8cjD5qFb/LQD/LQD4qFb5qFb/KwD8mU3/MwD6nk//QQ79Uhr/LgD/LQD4p1b5pFL/LAD6ikH/KgD2kkX6i0H6m076gDv4oVL/LgD5m077iUD/OAf7dDH+SxX8ZSf/LQD6kEb9WB35hj75lkr5k0b8hD3/PAnvn1D/LQD/LgD+Txf/NAT7gzz8aSn+TBT/MgL6iUD7dzT8ayv9Wx/9VRz5o1P7hj77gTr9YCP/OAf5qVf+SRP+RhH9RBD9QA2VSq1RAAAAM3RSTlMA/v4I/v7+7o7+/v7z57ebjzAXBv7+/PbVt3tjMSsc+vLv59/Kwr63t5eTj4uHg1dTNxBFu9rpAAAA00lEQVQoz+3Pxw6CUBAFUB5FmqCIvffeaXZpiv7/DzkiaoIkLt14dpN375sM9heBSNDxJPH1JXlCCBVSn6llAYFEMNXTaRzHm8VQsFqk0f0DOpgbtmFY1nZb60zm5SoBu1Ll2bSNA9M0UTyIDShqtdrvSZLkeX4HOI6zoWpAlWXZURCT++f1WtO07BEcgOM4FFQf3d7rOJnZ6MB13Ri4ZjIXz4OmXx3L2JskqgpQFfVpA3S9uwgdLzEtiEHOT/sERsIiVEpDMS/kFCUn5EWmVMF+6wZi1yBnfsFwrgAAAABJRU5ErkJggg==');
+      }
+    }
+  }
+}
+
+// 福利时间段
+.page-time-tabs-box {
+  overflow: hidden;
+  position: relative;
+  height: 96rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+    transform: translateY(.5);
+  }
+  .page-time-tabs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    // #ifdef H5 || APP-PLUS
+    overflow-x: auto;
+    // #endif
+    .page-time-tab {
+      flex: 1;
+      min-width: 210rpx;  //设置最小宽度
+      font-size: 24rpx;
+      text-align: center;
+      &.active {
+        .page-time-tab-time {
+          color: $text;
+        }
+        .page-time-tab-status {
+          color: $val;
+        }
+      }
+    }
+    .page-time-tab-time {
+      height: 1.4em;
+      color: #afafaf;
+    }
+    .page-time-tab-status {
+      height: 1.4em;
+      font-weight: 500;
+      color: #5eb124;
+    }
+  }
+}
+
+
+
+
+.goods-list {
+  padding-top: 2rpx;
+  .goods-item {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    margin: 16rpx 20rpx 20rpx;
+    padding: 28rpx 28rpx 32rpx 26rpx;
+    border-radius: 12rpx;
+    background-color: #fff;
+    .goods-img-box {
+      width: 208rpx;
+      height: 208rpx;
+      overflow: hidden;
+      .goods-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 8rpx;
+      }
+    }
+    .goods-infos {
+      flex: 1;
+      width: 80rpx;
+      margin-left: 30rpx;
+      .goods-title {
+        font-weight: 500;
+        font-size: 28rpx;
+        color: #3E3E3E;
+      }
+    }
+    .goods-process-box {
+      display: flex;
+      align-items: center;
+      margin-top: 14rpx;
+      .goods-process-bar {
+        width: 220rpx;
+        height: 20rpx;
+        border-radius: 100rpx;
+        background: #F0E8E4;
+        overflow: hidden;
+      }
+      .goods-process-active {
+        height: 20rpx;
+        border-radius: 100rpx;
+        background: linear-gradient(30deg, #FF2E00 0%, #F8A857 100%);
+      }
+      .goods-process-num {
+        margin-left: 10rpx;
+        font-size: 16rpx;
+        color: #FF3001;
+      }
+    }
+    .goods-sales-infos {
+      width: 100%;
+      margin-top: 10rpx;
+      color: #FF3001;
+      .goods-sales-info {
+        font-size: 26rpx;
+      }
+    }
+    .goods-info {
+      margin-top: 10rpx;
+      font-size: 24rpx;
+      color: #6E6E6E;
+    }
+    .goods-extend-infos {
+      position: absolute;
+      bottom: 32rpx;
+      right: 28rpx;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .goods-ctrl {
+        padding: 12rpx 30rpx 10rpx 32rpx;
+        border-radius: 72rpx;
+        font-size: 30rpx;
+        background: linear-gradient(30deg, #FF2E00 0%, #F8A857 100%);
+        color: #fff;
+      }
+    }
+    // 状态
+    .goods-status {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8rpx 12rpx;
+      border-radius: 0rpx 12rpx 0rpx 32rpx;
+      font-size: 24rpx;
+      color: #fff;
+      &.waiting {
+        background: linear-gradient(180deg, #7BB0FF 5%, rgba(165,222,255,0.81) 100%);
+      }
+      &.buying {
+        background: linear-gradient(180deg, #7AC560 5%, rgba(119,231,81,0.81) 100%);
+      }
+      &.info {
+        background: linear-gradient(180deg, #C0C0C0 5%, rgba(122,122,122,0.81) 100%);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 弹窗
+.rule-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.rule-popup-mask {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .72;
+}
+.rule-popup-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 70rpx;
+  padding: 35rpx 30rpx 50rpx 30rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+.rule-popup-title {
+  font-size: 38rpx;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.78;
+  color: #d88f00;
+}
+.rule-popup-content {
+  max-height: 600rpx;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  background-color: $page_bg;
+  overflow-y: auto;
+}
+
+.game-rule-tips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+}
+.game-rule-select {
+  margin-right: 10rpx;
+  width: 1em;
+  height: 1em;
+}
+.game-rule-toggle-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+.game-rule-text {
+  color: $tips;
+}
+.game-rule-entrance {
+  color: #d88f00;
+}
+.rule-popup-ctrl {
+  padding: 10rpx;
+  margin-top: 30rpx;
+  border-radius: 8rpx;
+  font-size: 36rpx;
+  text-align: center;
+  color: $btntext;
+  background-color: $btnbg;
+}

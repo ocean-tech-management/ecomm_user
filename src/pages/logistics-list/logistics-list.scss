@@ -1,0 +1,58 @@
+.logistics-list-info {
+  padding: 15rpx 30rpx;
+  font-size: 24rpx;
+  color: $val;
+  // 动态标记点
+  background-color: #f3f5ff;
+}
+.logistics {
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.losgistics-top {
+  display: flex;
+  align-items: center;
+}
+.logistics-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.logistics-status {
+  font-weight: 500;
+  color: $val;
+}
+.logistics-base-info {
+  flex: 1;
+  font-size: 24rpx;
+  text-align: right;
+  color: $tips;
+}
+.logistics-last-info {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.logistics-sku-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+}
+.logistics-sku-img-box {
+  width: 122rpx;
+  height: 122rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+.logistics-sku-img {
+  width: 122rpx;
+  height: auto;
+  border-radius: 6rpx;
+}
+.logistics-info {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}

@@ -1,0 +1,582 @@
+
+
+/* 收货人信息 */
+
+.order-user-bar {
+  display: flex;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+}
+.order-user-name {
+  width: 4em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.order-user-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+.order-user-info {
+  margin-top: 20rpx;
+  word-break: break-all;
+}
+.order-user-base-info {
+  font-size: 28rpx;
+  color: $h2;
+}
+.order-user-info:first-child {
+  margin-top: 0;
+}
+.order-user-tag {
+  height: 28rpx;
+  padding: 2rpx 9rpx;
+  border-radius: 16rpx;
+  font-size: 20rpx;
+  color: $primary_text;
+  background-color: $primary;
+}
+.order-user-more {
+  display: block;
+  width: 24rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+.order-address-border {
+  display: block;
+  width: 750rpx;
+  height: 10rpx;
+}
+
+.order-products {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+/* 底部按钮 */
+.order-ctrls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS>11.2*/
+  border-top: 1rpx solid $border_color;
+  background-color: #fff;
+  box-shadow: 0 -16rpx 24rpx 0 rgba(0,0,0,0.08);
+}
+.order-ctrl-info {
+  flex: 1;
+  width: 80rpx;
+  padding: 0 40rpx;
+  /* text-align: right; */
+  font-size: 32rpx;
+  color: #979797;
+}
+.should-pay {
+  color: $val;
+}
+.order-ctrl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220rpx;
+  height: 98rpx;
+  margin: 10rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: $val;
+}
+.order-ctrl-btn.disabled {
+  background-color: #ccc;
+}
+.order-ctrl-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220rpx;
+  height: 98rpx;
+  font-size: 32rpx;
+  color: $primary;
+  background-color: #e1e7ee;
+}
+
+.crowd-activity-sign {
+  font-size: 26rpx;
+}
+/* 列表数据 */
+.shopcar-orders {
+  /* border-top: 20rpx solid #f2f3f3; */
+}
+.shopcar-order {
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.shopcar-order:last-child {
+  border-bottom: 0;
+}
+.shopcar-order-top {
+  min-height: 125rpx;
+}
+.shopcar-order-select {
+  display: flex;
+  align-items: center;
+  width: 50rpx;
+  height: 176rpx;
+}
+.shopcar-order-img-box {
+  width: 176rpx;
+  height: 176rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.shopcar-order-img {
+  width: 176rpx;
+}
+.shopcar-order-info {
+  flex: 1;
+  width: 80rpx;
+}
+.shopcar-order-name {
+  display: -webkit-box;
+  max-height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.shopcar-order-property {
+  margin-top: 10rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+.shopcar-order-val-box {
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: $secondary_text;
+}
+.shopcar-order-val {
+  font-size: 30rpx;
+  color: $val;
+}
+.shopcar-order-val.shopcar-order-val-unactive {
+  color: $secondary_text;
+  text-decoration: line-through;
+}
+.shopcar-order-vip-val {
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.shopcar-order-count {
+  flex: 1;
+  width: 80rpx;
+  font-size: 24rpx;
+  text-align: right;
+  color: #999;
+}
+
+/* 订单信息 */
+.order-infos {
+  margin-top: 20rpx;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+.order-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+
+  white-space: nowrap;
+}
+.order-info-name {
+  color: #999;
+}
+.order-info-val {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 20rpx;
+  text-overflow: ellipsis;
+  text-align: right;
+  color: $secondary_text;
+  overflow: hidden;
+  .highlight {
+    color: $text;
+  }
+}
+.order-info-arrow {
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin-left: 10rpx;
+}
+
+.order-info-total {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  font-weight: 500;
+}
+.order-info-total-val {
+  flex: 1;
+  align-items: center;
+  text-align: right;
+  color: $val;
+}
+
+
+// 银行卡板块
+.bank-select-box {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 20rpx;
+}
+.bank-select-icon {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+}
+.bank-info {
+  flex: 1;
+  width: 80rpx;
+}
+
+.bank-nodata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25rpx 30rpx;
+}
+.bank-nodata-icon-box {
+  width: 1.4em;
+  height: 1.4em;
+}
+.bank-nodata-icon {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+}
+.bank-nodata-tips {
+  margin-left: 20rpx;
+}
+
+
+// 备注板块
+.order-desc-box {
+  margin-top: 20rpx;
+  padding: 30rpx 30rpx 60rpx 30rpx;
+  background-color: #fff;
+}
+.order-desc-textarea {
+  width: 100%;
+  height: 178rpx;
+  padding: 30rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  background-color: #f2f3f3;
+}
+
+
+
+.popup-title {
+  width: 100%;
+  padding: 20rpx 60rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  text-align: center;
+  color: #999;
+}
+.popup-close-icon {
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 40rpx;
+}
+.popup-mask {
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+}
+.confirm-order {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.kv-title {
+  border-bottom: 1px solid #ccc;
+}
+.confirm-btn-box {
+  display: flex;
+  padding: 20rpx 0;
+}
+.price {
+  color: #f96a6d;
+}
+.coupon-tip {
+  font-size: 26rpx;
+  color: #999;
+}
+/* 优惠券弹窗 */
+.discount-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.discounts {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.discounts-content {
+  max-height: 600rpx;
+  overflow-y: auto;
+}
+.discount {
+  position: relative;
+  display: flex;
+  margin: 30rpx 30rpx 0 30rpx;
+  padding-right: 0;
+  background-color: #fff;
+}
+.discount.disabled:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.8);
+}
+.discount.should-replace:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.6);
+}
+.discount:last-child {
+  margin-bottom: 30rpx;
+}
+.coupon-bg {
+  width: 692rpx;
+  height: 253rpx;
+  margin: 0 auto;
+}
+.discount-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.conpon-price-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 227rpx;
+  padding: 20rpx;
+  color: #fff;
+}
+.coupon-price {
+  width: 100%;
+  font-size: 80rpx;
+  text-align: center;
+  letter-spacing: 1rpx;
+  vertical-align: bottom;
+}
+.coupon-discount-limit {
+  font-size: 28rpx;
+}
+.coupon-type {
+  font-size: 30rpx;
+}
+.coupon-info {
+  flex: 1;
+  width: 80rpx;
+  padding: 30rpx;
+}
+.coupon-extra-info {
+  display: flex;
+  align-items: center;
+  margin-top: 100rpx;
+  color: #999;
+}
+.coupon-expire-time {
+  flex: 1;
+}
+.discount-key {
+  flex: 1;
+}
+.discount-flex-center {
+  align-items: center;
+  padding: 30rpx;
+}
+.coupon-checkbox {
+  width: 1em;
+  height: 1em;
+}
+.discount-radio {
+  transform: scale(1.5);
+}
+.coupon-symbol {
+  font-size: 30rpx;
+}
+
+
+// 上传身份证板块
+.attach-infos {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.attach-info {
+  display: flex;
+  border-bottom: 1rpx solid $border_color;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+.attach-label {
+  padding: 20rpx 30rpx;
+}
+.attach-input {
+  flex: 1;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  line-height: 1.4;
+  color: $tips;
+}
+.pichture-uploader-box {
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+.picture-uploader {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+}
+.picture-uploader-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180rpx;
+  height: 180rpx;
+  border: 2rpx dashed $tips;
+  box-sizing: border-box;
+}
+.picture-uploader-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.picture-uploader-text {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: $tips;
+}
+.idcard-picture {
+  width: 180rpx;
+  height: auto;
+}
+
+
+
+// 协议支付相关弹窗
+.pay-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pay-popup-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.45);
+}
+.pay-popup-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 80rpx;
+  right: 80rpx;
+  margin: 0 auto;
+  border-radius: 16rpx;
+  text-align: center;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+.pay-popup-content {
+  position: relative;
+  padding: 70rpx 50rpx;
+}
+.pay-popup-title {
+  margin-top: 10rpx;
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.pay-popup-tips {
+  margin-top: 30rpx;
+  color: $tips;
+}
+.pay-popup-input-box {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: $text;
+    transform: scaleY(.5);
+  }
+}
+.pay-popup-input {
+  margin-top: 70rpx;
+  padding: 10rpx 30rpx;
+  border: none;
+  box-sizing: content-box;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 1.4em;
+  letter-spacing: 10rpx;
+}
+
+.pay-popup-code-btn {
+  padding: 14rpx 20rpx;
+  margin: 25rpx auto 0 auto;
+  border: 1rpx solid #206be2;
+  border-radius: 35rpx;
+  text-align: center;
+  color: #206be2;
+}
+
+.pay-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20rpx 30rpx;
+  font-size: 32rpx;
+  color: $tips;
+}

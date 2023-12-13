@@ -1,0 +1,56 @@
+// theme description
+$page_bg: #f5f5f5;
+
+$primary: #f9e3be;              //主要颜色，价格或者部分按钮、tab
+$secondary: #000;              //主要颜色，价格或者部分按钮、tab
+$warning: #c3946d;              //警告色
+$theme_bg: #f9e3be;              //页面的主色调
+$coupon_bg: #ffde3d;          //优惠券色调
+$coupon_text: #000;           //优惠券文本
+$index_bg: #871e0a;            //首页顶部板块的颜色
+$overview_bg: #c8af87;          //总览板块的颜色，用在个人中心或其他总览板块  
+
+$text: #282828;                 //全局文本主要颜色
+$secondary_text: #9c9c9c;            //全局文本次要颜色
+$third_text: #313131;            //全局文本次要颜色
+$tips: #7c7c7c;                 //提示文本、无用信息的主色调
+$h1: #72675e;
+$h2: #000;
+$placeholder: #a2a3a3;          //默认填充文本、假的默认填充文本的默认色
+
+$primary_text: #000;            //主色调对应文字颜色
+$theme_text: #000;              //页面主色调对应文字颜色
+$val: #de401d;                  //价格文字颜色
+
+$btnbg: #f9e3be;                //按钮主要色调
+$btntext: #000;               //按钮主要色调对应的文本颜色
+$btntips: #000;               //按钮主要色调对应的提醒文本颜色
+$btnbg_sub: #282828;            //次要按钮色调
+$btntext_sub: #fff;           //次要按钮色调对应的文本颜色
+$btnbg_disabled: #efeced;            //次要按钮色调
+$border_color: #f1f1f1;         //主要线条颜色
+
+$vip_primary: #c7af88;          //会员相关字体用色，用于价格
+$vip_theme: #cff3f0;            //会员的相关色卡，大致主题色
+
+$timeline_bg: #000;          //时间轴用色
+$timeline_text: #000;           //时间轴对应文案颜色
+$timeline_text_active: #fff;   //时间轴高亮时对应文案颜色
+
+$content_bg: #fff;           //部分区块的主要背景色，一般是用来明确区分"块"
+$content_text: #000;            //主要背景色对应的文字颜色
+
+$tab_color: #000;               //选项卡颜色
+
+$tag_bg: #000;               //各类标签的默认色
+$tag_color: #fff;            //各类标签的默认字体颜色
+$tag_sub_color: #e1cba7;        //标签第二选色
+
+$subtitle_bg: linear-gradient(-181deg, #FF7F24 0%, #DE401D 75%);          //副标背景
+$subtitle_color: #fff;       //副标文字颜色
+
+$logistics_text: #40b342;       //最新物流项的高亮字体色
+$logistics_bg: #40b342;         //最新物流项的高亮点色
+$logistics_tips: #40b342;       //最新物流项的高亮次要消息色
+
+$progress_color: #000;        //百分比进度条颜色

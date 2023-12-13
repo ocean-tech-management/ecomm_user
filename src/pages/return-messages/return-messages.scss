@@ -1,0 +1,64 @@
+
+
+.tab-page-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.message-box {
+  height: 100%;
+  
+}
+
+.message {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 30rpx 40rpx;
+  // 动态标记点
+  background-color: #fff;
+}
+.message:last-child {
+  margin-bottom: 20rpx;
+}
+
+.msg-icon-box {
+  width: 75rpx;
+  height: 75rpx;
+  overflow: hidden;
+}
+.msg-icon {
+  display: block;
+  width: 75rpx;
+  height: 75rpx;
+}
+.msg-info {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 33rpx;
+}
+.msg-title-box {
+  display: flex;
+  align-items: baseline;
+}
+.msg-title {
+  flex: 1;
+  width: 80rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.msg-date {
+  font-size: 24rpx;
+  color: $tips;
+}
+.msg-content {
+  margin-top: 10rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: $tips;
+  overflow: hidden;
+}

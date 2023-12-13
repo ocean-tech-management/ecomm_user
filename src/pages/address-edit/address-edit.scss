@@ -1,0 +1,138 @@
+
+.form {
+  padding-top: 0;
+}
+.form-item {
+  position: relative;
+  border-bottom: 0;
+}
+.form-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30rpx;
+  right: 30rpx;
+  height: 1px;
+  background-color: $border_color;
+}
+.form-input {
+  padding: 35rpx 30rpx;
+  text-align: left;
+}
+.form-val-box {
+  flex: 1;
+  display: flex;
+  padding: 20rpx 30rpx;
+
+}
+.address-placeholder {
+  font-size: 28rpx;
+  color: $tips;
+}
+
+.address-textarea-item {
+  padding: 0 0 30rpx 0;
+}
+.address-textarea {
+  width: 100%;
+  height: 5.2em;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  line-height: 1.4;
+}
+.address-textarea-placeholder {
+  font-size: 24rpx;
+  color: #888;
+}
+
+
+.address-bottom {
+  display: flex;
+  align-items: center;
+  padding: 50rpx 0;
+  background-color: #fff;
+}
+.address-ctrls {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 80rpx;
+}
+.address-ctrl {
+  display: flex;
+  align-items: center;
+  padding: 4rpx 20rpx;
+  border-radius: 8rpx;
+}
+.address-ctrl.active {
+  color: $text;
+}
+.address-default-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 10rpx;
+}
+
+
+
+.address-auto-fill {
+  padding: 4rpx 20rpx;
+  color: $tips;
+}
+
+
+// 自动识别弹窗
+.auto-fill-popup {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.auto-fill-popup.auto-fill-popup-active {
+  left: 0;
+}
+.auto-fill-popup-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 2, 2, 0.7);
+}
+.auto-fill-popup-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  left: 0;
+  right: 0%;
+  width: 610rpx;
+  padding: 30rpx;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+.auto-fill-textarea {
+  width: 100%;
+  height: 178rpx;
+  padding: 30rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  background-color: $page_bg;
+}
+.auto-fill-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160rpx;
+  height: 50rpx;
+  margin-top: 20rpx;
+  color: #fff;
+  background-color: #000;
+
+}
+

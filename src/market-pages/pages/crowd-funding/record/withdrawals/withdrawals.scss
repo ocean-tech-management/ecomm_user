@@ -1,0 +1,99 @@
+
+.success-color {
+  color: #67c23a;
+}
+.warning-color {
+  color: #e6a23c;
+}
+.error-color {
+  color: #e2283d;
+}
+.tab-page-scroll {
+  height: 100%;
+}
+
+.list-box {
+  height: 100%;
+  background-color: #fff;
+}
+
+.incomes-list {
+  margin-top: 20rpx;
+}
+.income {
+  position: relative;
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx 35rpx;
+  border-bottom: 1rpx solid #eee;
+  background-color: #fff;
+}
+.income-content {
+  display: flex;
+}
+
+/* .income::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 1rpx;
+  background-color: #ccc;
+} */
+.income-info {
+  flex: 1;
+  width: 80rpx;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.income-desc {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-desc-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-desc-orderid {
+  flex: 1;
+  width: 80rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.income-create-time {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+
+.income-other-desc {
+  text-align: right;
+}
+.income-val {
+  font-weight: 500;
+  color: $val;
+}
+.income-desc-orderval {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-less {
+  color: $tips;
+}
+.income-other-desc-item {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+.income-remark {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}

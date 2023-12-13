@@ -1,0 +1,33 @@
+.poster-page {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.poster {
+  display: block;
+  width: 710rpx;
+  height: auto;
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+#poster-canvas {
+  position: fixed;
+  top: 100vh;
+  left: 100vw;
+  // width: 710px;
+  // height: 1120px;
+  z-index: 2;
+}
+.poster-tips {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: $tips;
+}
+
+.save-btn {
+  border-radius: 0;
+  color: $btntext;
+  background-color: $btnbg;
+}

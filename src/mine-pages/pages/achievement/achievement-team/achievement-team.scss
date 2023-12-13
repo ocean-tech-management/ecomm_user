@@ -1,0 +1,96 @@
+
+.achievement-tips {
+  padding: 35rpx 60rpx;
+  font-size: 38rpx;
+  // 动态标记点
+  background-image: linear-gradient(129deg, #FFEF7D 0%, #FFE658 40%, #FDDB32 100%);
+}
+.achievement-tips-title {
+  font-size: 38rpx;
+}
+.achievement-tips-text {
+  margin-top: 5rpx;
+  font-size: 26rpx;
+  color: #555;
+}
+.achievement-totals {
+  display: flex;
+  background-color: #fff;
+}
+.achievement-total {
+  position: relative;
+  flex: 1;
+  width: 80rpx;
+  padding: 30rpx;
+  text-align: center;
+}
+.achievement-total:after {
+  content: '';
+  position: absolute;
+  top: 30rpx;
+  bottom: 30rpx;
+  right: 0;
+  width: 1px;
+  background-color: $border_color;
+}
+.achievement-total:last-child:after {
+  width: 0;
+}
+.achievement-total-val {
+  font-size: 40rpx;
+}
+.achievement-total-title {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+
+// 下方板块， 进度条
+.achievement-progresses {
+  margin-top: 20rpx;
+}
+.achievement-progress {
+  margin-bottom: 20rpx;
+  padding: 35rpx 50rpx 60rpx 50rpx;
+  color: $primary_text;
+  background-color: #ffffff;
+}
+.achievement-progress:last-child {
+  margin-top: 0;
+}
+.achievement-progress-title {
+  font-size: 30rpx;
+}
+.achievement-progress-aim {
+  font-size: 30rpx;
+  vertical-align: baseline;
+}
+
+
+.achievement-progress-infos {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.progress-percent-bar {
+  position: relative;
+  flex: 1;
+  width: 80rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  background-color: $border_color;
+}
+.progress-percent {
+  height: 100%;
+  border-radius: 5rpx;
+  background-color: $progress_color;
+}
+.progress-percent-info {
+  min-width: 180rpx;
+  margin-left: 30rpx;
+  font-size: 27rpx;
+  text-align: right;
+  white-space: nowrap;
+  color: $tips;
+}

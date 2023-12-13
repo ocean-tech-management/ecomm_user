@@ -1,0 +1,211 @@
+.tab-page-scroll {
+  height: 100%;
+}
+/* 评论板块 */
+.reputations {
+  padding-top: 2rpx;
+}
+
+.reputation {
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+}
+.reputation-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reputation-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 30rpx;
+}
+.reputation-name {
+  font-size: 32rpx;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.reputation-user-tag {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: $secondary_text;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.reputation-content {
+  font-size: 28rpx;
+  display: -webkit-box;
+  max-height: 4.2em;
+  margin-top: 25rpx;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  &.reputation-content-all {
+    display: block;
+    min-height: 4.2em;
+    max-height: unset;
+    .reputation-rich-content {
+      display: block;
+    }
+  }
+}
+.reputation-rich-content {
+  display: -webkit-box;
+  height: 100%;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.reputation-all-triger {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: $warning;
+}
+
+.reputation-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.reputation-image-box {
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.reputation-image-box:nth-child(3n) {
+  margin-right: 0;
+}
+.reputation-image {
+  display: block;
+  width: 170rpx;
+  height: 170rpx;
+  font-size: 0;
+}
+
+.reputation-ctrls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40rpx;
+}
+.share-btn {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 35rpx;
+  color: $btntext_sub;
+  background-color: $btnbg_sub;
+}
+.share-btn-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin-right: 10rpx;
+}
+
+
+
+
+// 海报
+.poster-box {
+  position: fixed;
+  top: 0;
+  left: 101vw;
+  width: 750px;
+  height: 837px;
+  opacity: 0;
+  // opacity: 1;
+}
+.poster-canvas {
+  width: 750px;
+  height: 837px;
+}
+
+.share-thumb-box {
+  position: fixed;
+  top: 0;
+  left: 101vw;
+  width: 750px;
+  height: 600px;
+  opacity: 0;
+}
+.share-thumb-canvas {
+  width: 750px;
+  height: 600px;
+}
+
+.poster-result-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.poster-result-content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  
+  // 动态标记点
+  background-color: rgba(0,0,0,.5);
+  overflow-y: auto;
+}
+.poster-img-box {
+  position: relative;
+  &.poster-img-box-sm {
+    width: 450rpx;
+    margin: 0 auto;
+  }
+}
+.poster-result-close {
+  position: fixed;
+  top: 40rpx;
+  right: 120rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 1;
+}
+.poster-img {
+  display: block;
+  width: 544rpx;
+  height: auto;
+  margin: 30rpx auto;
+  // border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.poster-ctrls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+.poster-ctrl {
+  padding: 0 30rpx;
+  margin: 0 20rpx;
+  font-size: 26rpx;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+.poster-ctrl:after {
+  border: 0;
+}
+.poster-ctrl-icon {
+  width: 98rpx;
+  height: 98rpx;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,70 @@
+
+.address {
+  padding: 30rpx 30rpx 20rpx 30rpx;
+  margin-bottom:20rpx;
+  border-bottom: 1rpx solid $border_color;
+  background-color: #fff;
+}
+.address-userinfo {
+  display: flex;
+  align-items: center;
+  color: $h2;
+}
+.address-username {
+  margin-right: 20rpx;
+}
+.address-info {
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+.address-default-tag {
+  display: inline-block;
+  margin-right: 15rpx;
+  padding: 2rpx 13rpx;
+  border-radius: 6rpx;
+  font-size: 20rpx;
+  color: $primary_text;
+  background-color: $primary;
+}
+.address-bottom {
+  display: flex;
+  align-items: center;
+  padding-top: 20rpx;
+}
+.address-ctrls {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 80rpx;
+}
+.address-ctrl {
+  display: flex;
+  align-items: center;
+  padding: 4rpx 0;
+  border-radius: 8rpx;
+}
+.address-ctrl.active {
+  color: $text;
+}
+.address-default-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 10rpx;
+}
+.address-ctrl-btn {
+  margin-left: 30rpx;
+}
+.address-ctrl-icon {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.bottom-btns {
+  position: static;
+}
+.bottom-btn {
+  background-color: $btnbg;
+}

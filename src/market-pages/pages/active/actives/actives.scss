@@ -1,0 +1,327 @@
+$activityHighLight: #dd1920;
+
+
+.mt-90 {
+  margin-top: 90rpx;
+}
+
+// 样式
+.crowd-activity-sign {
+  font-size: 26rpx;
+}
+.tab-page-scroll {
+  height: 100%;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #443016;
+}
+
+.activity-products-bg-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.activity-products-bg {
+  width: 100%;
+  height: auto;
+}
+
+
+.activity-products-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35rpx;
+  margin-bottom: 10px;
+  font-size: 38rpx;
+  color: #412d14;
+}
+
+.rush-timelines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.rush-timeline {
+  flex: 1;
+  width: 80rpx;
+  min-width: 20%;
+  padding: 20rpx;
+  text-align: center;
+  &.active {
+    color: $activityHighLight;
+    .rush-timeline-time {
+      font-size: 38rpx;
+    }
+    .rush-timeline-status {
+      color: $activityHighLight;
+    }
+  }
+}
+.rush-timeline-time {
+  height: 51rpx;
+  // font-family: 'AGP';
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.rush-timeline-status {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: $tips;
+}
+
+
+// 普通样式
+.activity-products {
+  height: 100%;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+}
+.activity-product-poster {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rush-padding {
+  height: 20rpx;
+}
+.activity-product {
+  display: flex;
+  margin: 25rpx 20rpx 5rpx 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.activity-product-img-box {
+  position: relative;
+  width: 220rpx;
+  height: 220rpx;
+  overflow: hidden;
+}
+.activity-product-sell-out {
+  // 已售罄的样式
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144rpx;
+  height: 144rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #fff;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,.5);
+}
+.activity-product-img {
+  display: block;
+  width: 220rpx;
+  height: auto;
+}
+.activity-product-content {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 30rpx;
+}
+.activity-product-title-box {
+  height: 2.8em;
+}
+.activity-product-title {
+  display: -webkit-box;
+  max-height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: $text;
+  overflow: hidden;
+}
+
+.activity-product-subtitle {
+  display: inline-block;
+  max-width: calc(100% - 10rpx);
+  margin-top: 10rpx;
+  padding: 0 5rpx;
+  font-size: 24rpx;
+  color: $subtitle_color;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #f2f3f3;
+  overflow: hidden;
+}
+
+.activity-product-infos {
+  display: flex;
+  align-items: center;
+  margin-top: 70rpx;
+}
+.activity-product-info {
+  flex: 1;
+  width: 80rpx;
+}
+
+.activity-product-val {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: $activityHighLight;
+  &.price-integral {
+    font-size: 34rpx;
+  }
+}
+.activity-product-val-unactive {
+  font-size: 22rpx;
+  text-decoration: line-through;
+  color: $tips;
+}
+
+.activity-product-val-ctrl {
+  flex: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.activity-product-ctrls {
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+}
+.activity-product-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170rpx;
+  height: 60rpx;
+  border-radius: 85rpx;
+  font-size: 26rpx;
+  color: #fff;
+  background-color: $activityHighLight;
+  &.disabled {
+    // 动态标记点
+    background-color: #cacaca;
+  }
+}
+
+
+
+
+// 特殊样式
+.rush-product-list {
+  padding-bottom: 30rpx;
+}
+.rush-product {
+  display: flex;
+  margin: 25rpx 0 5rpx 0;
+  padding: 30rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.rush-product-img-box {
+  position: relative;
+  width: 280rpx;
+  height: 280rpx;
+}
+.rush-product-img {
+  display: block;
+  width: 280rpx;
+  height: 280rpx;
+}
+.rush-product-content {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 30rpx;
+}
+
+.rush-product-baseinfo {
+  height: 2.8em;
+  font-size: 34rpx;
+  background-color: #fff;
+}
+.rush-product-title {
+  display: -webkit-box;
+  max-height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  color: $text;
+  overflow: hidden;
+}
+
+.rush-product-infos {
+  display: flex;
+  align-items: center;
+  margin-top: 100rpx;
+}
+.rush-product-info {
+  flex: 1;
+  width: 80rpx;
+}
+.rush-product-val {
+  font-size: 38rpx;
+  font-weight: 600;
+  color: $activityHighLight;
+  &.price-integral {
+    font-size: 34rpx;
+  }
+}
+.rush-product-val-unactive {
+  font-size: 24rpx;
+  text-decoration: line-through;
+  color: $tips;
+}
+.rush-product-val-give {
+  font-size: 24rpx;
+  color: $tips;
+}
+.rush-product-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 187rpx;
+  height: 76rpx;
+  border-radius: 94rpx;
+  color: #fff;
+  background-color: $activityHighLight;
+  &.disabled {
+    // 动态标记点
+    background-color: #cacaca;
+  }
+}
+
+/* 抢购剩余百分比 */
+.rush-timelimit-percent {
+  position: relative;
+  width: 200rpx;
+  height: 40rpx;
+  margin: 0 auto 0 0;
+  border: 2rpx solid $primary;
+  border-radius: 24rpx;
+  color: $primary;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.rush-timelimit-percent-rate {
+  height: 100%;
+  background-color: #e1e7fe;
+}
+.rush-timelimit-percent-val {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  z-index: 2;
+}
+
+

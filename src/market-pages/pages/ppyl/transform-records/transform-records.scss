@@ -1,0 +1,57 @@
+.page-scroll {
+  height: 100%;
+}
+
+.time-filter-bar {
+  padding: 20rpx;
+  background-color: $page_bg;
+}
+.time-filter-trigger {
+  position: relative;
+  display: flex;
+  padding: 15rpx 30rpx;
+  border: 1rpx solid $text;
+  border-radius: 34rpx;
+  font-size: 26rpx;
+  // 动态标记点
+  background-color: #f1f2f3;
+}
+.time-filter-placeholder {
+  color: $tips;
+}
+.time-filter-icon {
+  position: absolute;
+  top: 50%;
+  right: 30rpx;
+  width: 46rpx;
+  height: 46rpx;
+  transform: translateY(-50%);
+}
+
+.income {
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx;
+  border-radius: 6rpx;
+  background-color: $content_bg;
+}
+.income-info {
+  display: flex;
+  align-items: center;
+  &+& {
+    margin-top: 10rpx;
+  }
+}
+.income-desc {
+  flex: 1;
+  width: 80rpx;
+}
+.income-create-time {
+  flex: 1;
+  width: 80rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.income-status {
+  font-size: 24rpx;
+  color: $tips;
+}

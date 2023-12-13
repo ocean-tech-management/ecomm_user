@@ -1,0 +1,358 @@
+
+
+.order-status-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 140rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  color: $primary_text;
+  background-color: $primary;
+}
+.order-status-bg {
+  display: block;
+  width: 750rpx;
+  height: auto;
+}
+.order-status-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20rpx 40rpx 20rpx 40rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+.order-status-text {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+.order-status-tips {
+  margin-top: 10rpx;
+}
+
+
+/* 退换货状态说明 */
+.return-status-info {
+  padding: 30rpx;
+  border-bottom: 1px solid #dedede;
+  background-color: #fff;
+}
+.return-status-title {
+  font-weight: 500;
+}
+.return-status-tips {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+
+
+/* 收货人信息 */
+.return-user-bar {
+  display: flex;
+  padding: 30rpx;
+  color: $tips;
+  background-color: #fff;
+}
+.return-address-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.return-user-baseinfo {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.return-user-name {
+  max-width: 5em;
+  margin-right: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.return-user-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  .fixed{
+    position: absolute;
+    bottom: -10rpx;
+    right: 0rpx;
+  }
+}
+.return-user-info {
+  margin-top: 20rpx;
+}
+.return-user-info:first-child {
+  margin-top: 0;
+}
+
+.order-products {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+
+.return-title {
+  padding: 30rpx 40rpx 0 40rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+
+/* 底部按钮 */
+.order-ctrls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1rpx solid $border_color;
+  background-color: #fff;
+  box-shadow: 0 -16rpx 24rpx 0 rgba(0,0,0,0.08);
+}
+.order-ctrl-info {
+  flex: 1;
+  width: 80rpx;
+  padding: 0 30rpx;
+  /* text-align: right; */
+  font-size: 32rpx;
+  color: #979797;
+}
+.should-pay {
+  color: $val;
+}
+.order-ctrl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220rpx;
+  height: 98rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #05c160;
+}
+.order-ctrl-btn.disabled {
+  background-color: #ccc;
+}
+.order-ctrl-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220rpx;
+  height: 98rpx;
+  font-size: 32rpx;
+  color: $primary;
+  background-color: #e1e7ee;
+}
+
+
+/* 列表数据 */
+.shopcar-order {
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.shopcar-order-top {
+  height: 125rpx;
+}
+.shopcar-order-select {
+  display: flex;
+  align-items: center;
+  width: 50rpx;
+  height: 176rpx;
+}
+.shopcar-order-img-box {
+  width: 156rpx;
+  height: 156rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.shopcar-order-img {
+  width: 156rpx;
+}
+.shopcar-order-info {
+  flex: 1;
+  width: 80rpx;
+}
+.shopcar-order-name-box {
+  display: flex;
+}
+.shopcar-order-name {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.shopcar-order-name-flex {
+  flex: 1;
+  width: 80rpx;
+}
+.shopcar-order-count-static {
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.shopcar-order-property {
+  margin-top: 10rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+.shopcar-order-val-box {
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: $secondary_text;
+}
+.shopcar-order-val {
+  font-size: 30rpx;
+  color: $val;
+}
+.shopcar-order-val.shopcar-order-val-unactive {
+  color: $secondary_text;
+  text-decoration: line-through;
+}
+.shopcar-order-vip-val {
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.shopcar-order-count {
+  flex: 1;
+  width: 80rpx;
+  font-size: 24rpx;
+  text-align: right;
+  color: #999;
+}
+
+.shopcar-order-real-val {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 80rpx;
+  font-size: 28rpx;
+  color: $text;
+}
+.shopcar-order-val-real {
+  font-size: 32rpx;
+  color: $val;
+}
+
+.shopcar-order-ctrl {
+  padding: 9rpx 40rpx;
+  border: 1px solid $btnbg;
+  border-radius: 30rpx;
+  color: $btnbg;
+}
+
+
+/* 订单号及其他相关信息 */
+.order-base-infos {
+  padding: 30rpx;
+  background-color: #fff;
+}
+.order-base-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  color: $tips;
+}
+.order-base-info:first-child {
+  margin-top: 0;
+}
+.order-base-info-val {
+  flex: 1;
+  width: 80rpx;
+}
+.order-base-info-btn {
+  padding: 2rpx 30rpx;
+  border: 1rpx solid $secondary_text;
+  border-radius: 23rpx;
+  color: $secondary_text;
+}
+
+
+.order-delete {
+  width: 60rpx;
+  font-size: 22rpx;
+  text-align: center;
+}
+.order-delete-icon {
+  width: 40rpx;
+  height: 30rpx;
+  margin: 0 auto;
+}
+
+
+
+.order-ctrl {
+  margin-right: 30rpx;
+  padding: 13rpx 30rpx;
+  border: 2rpx solid $secondary_text;
+  border-radius: 33rpx;
+  color: $text;
+}
+.order-ctrl.primary {
+  border-color: $btnbg;
+  color: $btntext;
+  background-color: $btnbg;
+}
+
+
+
+// 拒绝售后的凭据
+.refuse-pictures-box {
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.refuse-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.refuse-picture-item {
+  position: relative;
+  margin-right: 30rpx;
+}
+.refuse-picture-box {
+  width: 180rpx;
+  height: 180rpx;
+  overflow: hidden;
+}
+.refuse-picture {
+  width: 180rpx;
+  height: auto;
+}
+.refuse-picture-delete-box {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.refuse-picture-delete {
+  width: 36rpx;
+  height: 36rpx;
+}

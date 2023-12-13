@@ -1,0 +1,69 @@
+.page-scroll {
+  height: 100%;
+}
+.record {
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx 30rpx 50rpx 30rpx;
+  border-radius: 6rpx;
+  background-color: $content_bg;
+}
+.record-baseinfo {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  white-space: nowrap;
+  color: $tips;
+}
+.record-sn {
+  flex: 1;
+  width: 80rpx;
+}
+.record-content {
+  display: flex;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+  border-top: 1rpx solid $border_color;
+}
+.record-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-right: 20rpx;
+}
+.record-goods-info {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.record-goods-img-box {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.record-goods-img {
+  display: flex;
+  width: 1.4em;
+  height: 1.4em;
+}
+.record-goods-name {
+  margin-left: 10rpx;
+}
+.record-info {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+
+.record-vals {
+  text-align: right;
+}
+.record-val {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.record-val-unactive {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  text-decoration: line-through;
+  color: $tips;
+}

@@ -1,0 +1,197 @@
+.card-list {
+  flex: 1;
+  height: 100%;
+}
+
+.nodata-page-icon {
+  width: 258rpx;
+}
+
+.card-bottom-ctrls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20rpx 0;
+  padding-bottom: calc(20rpx + env(safe-area-inset-bottom)); /*兼容 IOS>11.2*/
+  background-color: #fff;
+  box-shadow: 0 -16rpx 24rpx 0 rgba(0,0,0,0.08);
+  z-index: 3;
+}
+.card-bottom-ctrl {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 40rpx;
+  font-size: 34rpx;
+  color: #fff;
+  white-space: nowrap;
+  background-color: $btnbg_sub;
+}
+
+
+.card-item {
+  width: 630rpx;
+  margin: 40rpx auto 0 auto;
+  background-color: #fff;
+}
+.card-base-info {
+  position: relative;
+  width: 630rpx;
+  height: 290rpx;
+}
+.card-bg {
+  width: 630rpx;
+  height: 290rpx;
+}
+.card-base-info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.card-base-info-title {
+  margin-top: 40rpx;
+  font-size: 34rpx;
+}
+.card-sn {
+  margin-top: 80rpx;
+  font-size: 26rpx;
+  letter-spacing: 20rpx;
+  text-indent: 20rpx;
+}
+.card-date {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #8f6b31;
+}
+.card-more-icon {
+  position: absolute;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  transition: transform .2s linear;
+  &.active {
+    transform: rotate(270deg);
+  }
+}
+.card-invalid-sign {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 294rpx;
+  height: 193rpx;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.card-use-ctrl {
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+  padding: 4rpx 25rpx;
+  border: 1rpx solid $text;
+  border-radius: 23rpx;
+  font-size: 26rpx;
+}
+
+.card-extend-info {
+  height: 0;
+  transition: height .2s linear;
+  overflow: hidden;
+  &.active {
+    height: auto;
+  }
+}
+.card-extend-info-content {
+  padding: 30rpx 40rpx;
+}
+.card-goods {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  white-space: nowrap;
+  color: $tips;
+}
+.card-goods-title {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-goods-count {
+
+}
+
+
+// 弹窗
+.card-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.card-popup-mask {
+  width: 100%;
+  height: 100%;
+  // 动态标记点
+  background-color: rgba(0,0,0,0.7);
+}
+.card-popup-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+.card-popup-data {
+  padding: 45rpx 80rpx 30rpx 80rpx;
+}
+.card-popup-data-item {
+  margin-top: 35rpx;
+}
+
+.card-popup-ctrls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20rpx 40rpx 90rpx 40rpx;
+  box-sizing: border-box;
+}
+.card-popup-ctrl {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 40rpx;
+  font-size: 34rpx;
+  color: #fff;
+  white-space: nowrap;
+  background-color: $btnbg_sub;
+}
+.card-popup-title {
+  font-size: 32rpx;
+}
+.card-popup-input {
+  width: 100%;
+  height: auto;
+  margin-top: 15rpx;
+  padding: 15rpx 23rpx;
+  border: 1rpx solid $border_color;
+  box-sizing: border-box;
+}

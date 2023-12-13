@@ -1,0 +1,108 @@
+
+.card-item {
+  width: 630rpx;
+  margin: 40rpx auto 0 auto;
+  background-color: #fff;
+}
+.card-base-info {
+  position: relative;
+  width: 630rpx;
+  height: 290rpx;
+}
+.card-bg {
+  width: 630rpx;
+  height: 290rpx;
+}
+.card-base-info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.card-base-info-title {
+  margin-top: 40rpx;
+  font-size: 34rpx;
+}
+.card-sn {
+  height: 1.4em;
+  margin-top: 80rpx;
+  font-size: 26rpx;
+  letter-spacing: 20rpx;
+  text-indent: 20rpx;
+}
+.card-date {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.card-more-icon {
+  position: absolute;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  transition: transform .2s linear;
+  &.active {
+    transform: rotate(270deg);
+  }
+}
+.card-invalid-sign {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 294rpx;
+  height: 193rpx;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.card-use-ctrl {
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+  padding: 4rpx 25rpx;
+  border: 1rpx solid $text;
+  border-radius: 23rpx;
+  font-size: 26rpx;
+}
+
+.card-desc {
+  margin: 47rpx 60rpx;
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+}
+.card-desc-content {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: $secondary_text;
+}
+
+
+.bind-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS>11.2*/
+  background-color: #fff;
+}
+.ask-phone-btn {
+  padding: 20rpx;
+  margin: 44rpx 50rpx;
+  border-radius: 0;
+  font-size: 34rpx;
+  line-height: 1.4;
+  text-align: center;
+  // 动态标记点
+  color: #fff;
+  background-color: #000;
+  &.disabled {
+    background-color: #aaa;
+  }
+}

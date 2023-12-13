@@ -1,0 +1,215 @@
+$vipCardTextColor: #f4c6aa;
+$pagePrimary: #fcdb99;
+$pageBlockBg: #252730;
+
+.page-turnback {
+  position: absolute;
+  left: 20rpx;
+  padding: 20rpx;
+}
+.page-turnback-icon {
+  display: block;
+  width: auto;
+  height: 30rpx;
+}
+
+.vip-page {
+  padding-bottom: 150rpx;
+  color: #fff;
+}
+
+.vip-card-decorate-img {
+  display: block;
+  width: 750rpx;
+  height: 178rpx;
+}
+
+.vip-card {
+  position: relative;
+  margin: 0 auto;
+  width: 690rpx;
+  border-radius: 27rpx;
+  overflow: hidden;
+  background-color: $pageBlockBg;
+}
+.vip-card-bg {
+  display: flex;
+  width: 690rpx;
+  height: 393rpx;
+}
+.vip-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 690rpx;
+  padding: 50rpx;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.vip-card-base {
+  display: flex;
+  align-items: flex-start;
+}
+.vip-card-baseinfo {
+  flex: 1;
+  width: 80rpx;
+}
+.vip-card-vipname {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: $vipCardTextColor;
+}
+.vip-card-expiretime {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.vip-card-ctrl {
+  padding: 10rpx 20rpx;
+  border: 1rpx solid $vipCardTextColor;
+  font-size: 26rpx;
+  color: $vipCardTextColor;
+}
+.vip-card-function {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 85rpx;
+}
+.vip-card-function-info {
+  flex: 1;
+}
+.vip-card-function-name {
+  font-size: 30rpx;
+  color: #fff;
+}
+.vip-card-function-tips {
+  margin-top: 5rpx;
+  font-size: 22rpx;
+}
+
+.vip-card-function-trigger {
+  transform: scale(.75);
+}
+
+.vip-block {
+  margin-top: 60rpx;
+}
+.vip-block-title {
+  padding: 0 40rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #fff;
+}
+
+.vip-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 30rpx 0 30rpx;
+}
+.vip-benefit {
+  display: flex;
+  align-items: center;
+  width: 300rpx;
+  height: 88rpx;
+  margin: 10rpx 10rpx 0 0;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  background-color: $pageBlockBg;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+.vip-benefit-img {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 25rpx;
+}
+.vip-benefit-info {
+  flex: 1;
+  width: 80rpx;
+  font-weight: 500rpx;
+  white-space: nowrap;  
+}
+.vip-benefit-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+}
+.vip-benefit-tips {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  color: $tips;
+  overflow: hidden;
+}
+
+.vip-packages {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30rpx;
+}
+.vip-package {
+  position: relative;
+  width: 200rpx;
+  height: 231rpx;
+  margin: 20rpx 20rpx 0 0;
+  padding: 20rpx 5rpx 30rpx 5rpx;
+  border: 4rpx solid $pageBlockBg;
+  border-radius: 8rpx;
+  text-align: center;
+  color: $pagePrimary;
+  background-color: $pageBlockBg;
+  &.selected {
+    border-color: $pagePrimary;
+    background-color: #363534;
+  }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.vip-package-title {
+  font-size: 34rpx;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.vip-pageage-price {
+  margin-top: 45rpx;
+  font-size: 56rpx;
+  font-weight: 500;
+  // font-family: 'AGP';
+}
+.vip-pageage-price-unactive {
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  // font-family: 'AGP';
+  text-decoration: line-through;
+}
+.vip-pageage-tips {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.vip-buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80rpx 40rpx 0 40rpx;
+  padding: 25rpx;
+  border-radius: 49px;
+  font-size: 32rpx;
+  color: #fff;
+  background-image: linear-gradient(90deg, #6D8EFF 4%, #CC85ED 51%, #FF9BA0 100%);
+}
+.vip-buy-tips {
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: $tips;
+}
+.vip-agreement {
+  color: #fff;
+}

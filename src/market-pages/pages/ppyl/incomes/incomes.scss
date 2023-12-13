@@ -1,0 +1,238 @@
+.income-total-box {
+  position: relative;
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 26rpx;
+  color: #fff;
+  overflow: hidden;
+}
+.income-total-bg {
+  width: 710rpx;
+  height: 320rpx;
+  margin: 0 auto;
+}
+.income-total {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.income-total-content {
+  display: flex;
+  align-items: center;
+  width: 610rpx;
+  padding: 50rpx;
+}
+.income-total-info {
+  flex: 1;
+  width: 80rpx;
+}
+.income-total-title {
+  font-size: 24rpx;
+}
+.income-total-val {
+  margin-top: 15rpx;
+  font-size: 50rpx;
+  font-weight: 500;
+}
+
+
+.income-total-types {
+  display: flex;
+}
+.income-total-type {
+  flex: 1;
+  width: 80rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.income-total-type-title {
+  font-size: 24rpx;
+  opacity: .6;
+}
+.income-total-type-val {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+
+// 节点筛选项
+.income-tabs {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 20rpx 0 20rpx;
+  border-radius: 16rpx;
+  white-space: nowrap;
+  color: $tips;
+  // 动态标记点
+  background-image: linear-gradient(164deg, #FFF27C 0%, #FFE046 98%);
+  box-shadow: 0 4rpx 12rpx 0 rgba(0,0,0,0.06);
+}
+.income-tab {
+  position: relative;
+  flex: 1;
+  padding: 30rpx;
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: 500;
+}
+.income-tab.active {
+  color: $text;
+}
+.income-tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+  width: 2em;
+  height: 5rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  background-color: $text;
+}
+.income-tab-icon {
+  width: 40rpx;
+  height: 40rpx;
+  // margin-right: 20rpx;
+}
+.income-tab-range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30rpx 30rpx 30rpx 200rpx;
+}
+
+.income-filter-times {
+  position: relative;
+  height: 100rpx;
+  margin: 0 20rpx;
+}
+.income-filter-bg {
+  position: absolute;
+  top: -16rpx;
+  left: 0;
+  right: 0;
+  padding: 46rpx 50rpx 30rpx 50rpx;
+  border-radius: 0 0 16rpx 16rpx;
+  background-color: #fff;
+  z-index: -1;
+}
+
+
+// 本金
+.payment {
+  display: flex;
+  align-items: center;
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  background-color: #fff;
+}
+.payment-val {
+  flex: 1;
+  margin-left: 45rpx;
+}
+.payment-ctrl {
+  padding: 15rpx 30rpx;
+  border-radius: 34rpx;
+  font-size: 26rpx;
+  white-space: nowrap;
+  color: $btntext;
+  background-color: $btnbg;
+}
+
+//团队收益信息
+.team-incomes {
+  margin: 20rpx 20rpx 0 20rpx;
+  padding: 30rpx 20rpx;
+  margin-bottom: 2rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+.team-income-top {
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.team-income-title {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.team-income-estimate {
+  flex: 1;
+  font-size: 34rpx;
+  font-weight: 500;
+  text-align: right;
+}
+.team-income-list {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15rpx;
+  border-top: 1rpx solid $border_color;
+}
+.team-income-item {
+  position: relative;
+  flex: 1;
+  padding: 30rpx 30rpx 0 20rpx;
+  box-sizing: border-box;
+}
+.team-income-item-sm {
+  width: 20%;
+  padding: 30rpx 0 0 0;
+}
+.team-income-val {
+  font-size: 34rpx;
+}
+.team-income-price {
+  display: flex;
+  align-items: baseline;
+  height: 1.4em;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: $text;
+}
+.team-income-price-sign {
+  font-size: 24rpx;
+}
+.team-income-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.team-income-arrow {
+  width: 1em;
+  height: 1em;
+  margin-top: 60rpx;
+}
+
+
+.income-enters {
+  margin: 20rpx 20rpx 180rpx 20rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+}
+.income-enter {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30rpx;
+    right: 30rpx;
+    height: 2rpx;
+    background-color: $border_color;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+.kv-item {
+  padding: 30rpx;
+}
+.kv-key {
+  font-weight: 500;
+}

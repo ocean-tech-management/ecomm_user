@@ -1,0 +1,43 @@
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.user-entrance-list {
+  margin: 145rpx 30rpx 0;
+  .user-entrance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx;
+    border-radius: 6rpx;
+    background-color: #fff;
+    font-size: 28rpx;
+    &:not(:first-child) {
+      margin-top: 30rpx;
+    }
+    .user-entrance-title {
+      @include ellipsis;
+      flex: none;
+      width: 200rpx;
+    }
+    .user-entrance-right {
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .money {
+        @include ellipsis;
+        padding-right: 40rpx;
+        font-size: 500;
+      }
+      .user-entrance-arrow {
+        flex: none;
+        display: block;
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+}

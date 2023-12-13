@@ -1,0 +1,213 @@
+.balance {
+  height: 135rpx;
+  padding: 40rpx 20rpx;
+  text-align: center;
+}
+.balance-val {
+  font-size: 60rpx;
+  font-weight: 500;
+}
+.balance-val-sign {
+  font-size: 40rpx;
+  vertical-align: middle;
+}
+.balance-title {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: $tips;
+}
+
+
+.withdraw-content {
+  min-height: 1212rpx;
+  padding-top: 2rpx;
+  border-radius: 32rpx 32rpx 0 0;
+  background-color: #fff;
+}
+.withdraw-content-box {
+  margin: 0 40rpx;
+}
+.withdraw-title-box {
+  display: flex;
+  align-items: baseline;
+  margin: 40rpx 10rpx;
+}
+.withdraw-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-right: 20rpx;
+  padding: 0 10rpx;
+}
+.withdraw-tips {
+  font-size: 24rpx;
+  color: $tips;
+}
+
+.withdraw-bank {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 40rpx;
+  border-radius: 16rpx;
+  background-color: $page_bg;
+}
+.bankcard {
+  flex: 1;
+  width: 80rpx;
+  color: $tips;
+}
+.bankcard-code {
+  color: $text;
+}
+.bankcard-update-btn {
+  color: $val;
+}
+.withdraw-bank-unsign {
+  flex: 1;
+  width: 80rpx;
+}
+.withdraw-bank-unsign-arrow {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+// 快速填写项
+.withdraw-selects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.withdraw-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 315rpx;
+  height: 96rpx;
+  margin-right: 42rpx;
+  margin-bottom: 24rpx;
+  border: 1rpx solid $tips;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  box-sizing: border-box;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &.active {
+    border: 3rpx solid #eb883c;
+    color: #eb883c;
+    // 动态标记点
+    background-color: #fff1ee;
+  }
+}
+.withdraw-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 53rpx;
+  height: 49rpx;
+}
+
+
+
+.pay-btn {
+  margin: 200rpx 80rpx;
+  padding: 25rpx 30rpx;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  // 动态标记点
+  background-color: $val;
+  box-shadow: 0 8rpx 10rpx 0 rgba(194,89,62,0.21);
+  &.disabled {
+    color: #fff;
+    background-image: none;
+    border-color: $border-color;
+    background-color: $border-color;
+    box-shadow: none;
+  }
+}
+
+
+
+// 协议支付相关弹窗
+.pay-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pay-popup-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.45);
+}
+.pay-popup-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 80rpx;
+  right: 80rpx;
+  margin: 0 auto;
+  border-radius: 16rpx;
+  text-align: center;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+.pay-popup-content {
+  position: relative;
+  padding: 70rpx 50rpx;
+}
+.pay-popup-title {
+  margin-top: 10rpx;
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.pay-popup-tips {
+  margin-top: 30rpx;
+  color: $tips;
+}
+.pay-popup-input-box {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: $text;
+    transform: scaleY(.5);
+  }
+}
+.pay-popup-input {
+  margin-top: 70rpx;
+  padding: 10rpx 30rpx;
+  border: none;
+  box-sizing: content-box;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 1.4em;
+  letter-spacing: 10rpx;
+}
+
+.pay-popup-code-btn {
+  padding: 14rpx 20rpx;
+  margin: 25rpx auto 0 auto;
+  border: 1rpx solid #206be2;
+  border-radius: 35rpx;
+  text-align: center;
+  color: #206be2;
+}
+
+.pay-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20rpx 30rpx;
+  font-size: 32rpx;
+  color: $tips;
+}

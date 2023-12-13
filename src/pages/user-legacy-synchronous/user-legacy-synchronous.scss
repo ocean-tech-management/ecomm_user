@@ -1,0 +1,85 @@
+/* 导航条 */
+.tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  //border-bottom: 1rpx solid #ccc;
+  background-color: #fff;
+  overflow-x: auto;
+}
+.tab {
+  flex: 1;
+  padding: 30rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: $secondary;
+}
+.tab.active {
+  position: relative;
+  color: $text;
+}
+.tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: 15rpx;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 4em;
+  height: 6rpx;
+  margin: 0 auto;
+  background: linear-gradient(30deg, #FF2E00 0%, #F8A857 100%);
+}
+.tab-page {
+  height: 100%;
+  background: #fff;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 90rpx;
+  .form-item {
+    width: 550rpx;
+    height: 88rpx;
+    padding: 24rpx 40rpx;
+    border: 2rpx solid #B3B3B3 !important;
+    border-radius: 44rpx;
+    box-sizing: border-box;
+    .form-input {
+      width: 100%;
+      padding: 0;
+      text-align: left;
+    }
+    &:not(:first-child) {
+      margin-top: 40rpx;
+    }
+  }
+  .form-tips {
+    align-self: flex-start;
+    padding: 13rpx 0 4rpx 140rpx;
+    font-size: 24rpx;
+    color: #FF2E00;
+  }
+}
+.code-btn {
+  padding: 20rpx 0 20rpx 30rpx;
+  color: $secondary;
+}
+.login-btn {
+  width: 550rpx;
+  height: 88rpx;
+  margin-top: 100rpx;
+  padding: 23rpx 0;
+  text-align: center;
+  border-radius: 44rpx;
+  background: linear-gradient(30deg, #FF2E00 0%, #F8A857 100%);
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #fff;
+  box-sizing: border-box;
+}
+

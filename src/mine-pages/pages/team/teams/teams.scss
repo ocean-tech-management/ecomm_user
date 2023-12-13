@@ -1,0 +1,341 @@
+$myInfoSecondary: #555;
+
+.tab-page-scroll {
+  height: 100%;
+}
+
+.team-page-top {
+  position: relative;
+  width: 100%;
+  height: 270rpx;
+  // 动态标记点
+  background-image: linear-gradient(-8deg, #EBCB9F 1%, #F7E9D1 100%);
+  overflow: hidden;
+}
+.team-page-top-bg {
+  display: block;
+  width: 100%;
+  height: 270rpx;
+}
+
+.team-page-top-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 45rpx 40rpx;
+  margin-bottom: auto;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.user-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userinfo-info {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 30rpx;
+}
+.userinfo-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.userinfo-info-item:last-child {
+  margin-bottom: 0;
+}
+.userinfo-name {
+  font-size: 32rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.userinfo-state {
+  margin-left: 20rpx;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  white-space: nowrap;
+  color: $tag_color;
+  background-color: $tag_bg;
+}
+.userinfo-phone {
+  color: $myInfoSecondary;
+}
+
+
+.teams-info {
+  margin-left: 20rpx;
+  text-align: right;
+}
+.teammate-num {
+  font-size: 38rpx;
+  text-align: center;
+}
+.teams-info-tips {
+  font-size: 24rpx;
+  color: $myInfoSecondary;
+}
+
+
+// tab
+.team-tabs {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 32rpx;
+}
+.team-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210rpx;
+  padding: 26rpx 0;
+  margin: 0 10rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: rgba(255,255,255,.4);
+}
+.team-tab.active {
+  background-color: #fff;
+}
+
+
+// 阶段汇总
+.team-info-totals {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.team-info-total {
+  flex: 1;
+  width: 80rpx;
+  padding: 30rpx 10rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.team-info-total-val {
+  height: 1.4em;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.team-info-total-title {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.team-info-total-title-tips {
+  font-size: 22rpx;
+}
+
+// 选中态
+.team-info-total-active {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 10rpx;
+    left: 0;
+    right: 0;
+    width: 60rpx;
+    height: 4rpx;
+    margin: 0 auto;
+    // 动态标记点
+    background-color: #000;
+  }
+}
+
+
+// 粉丝二级tab和数量汇总
+.fans-tab-box {
+  background-color: #fff;
+}
+.fans-tabs {
+  display: flex;
+  align-items: center;
+}
+.fans-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30rpx;
+  color: $tips;
+}
+.fans-tab.active {
+  color: $text;
+}
+.fans-tab-content {
+  position: relative;
+  padding: 30rpx 0;
+}
+.fans-tab.active .fans-tab-content:after {
+  content: '';
+  position: absolute;
+  bottom: 15rpx;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background-color: $primary;
+}
+
+// 汇总
+.fans-total {
+  display: flex;
+  align-items: center;
+}
+.fans-total-num {
+  flex: 1;
+  padding: 30rpx 20rpx 36rpx 20rpx;
+  text-align: center;
+}
+.fans-total-num-val {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.fans-total-num-title {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+
+// 搜索框
+.fans-search-box {
+  padding: 20rpx;
+}
+.fans-search-label {
+  position: relative;
+  flex: 1;
+  display: block;
+  border: none;
+}
+.fans-search-input {
+  padding: .4em 3em .4em 1em;
+  border: none;
+  border-radius: 1.95em;
+  font-size: 28rpx;
+  line-height: 1.4;
+  color: $tips;
+  background-color: #fff;
+}
+.fans-search-icon {
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em;
+}
+
+
+// 粉丝列表
+.fans-list {
+
+}
+.fans-item {
+  display: flex;
+  padding: 30rpx;
+  margin: 0 10rpx 20rpx 10rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.fans-vision {
+  width: 80rpx;
+  margin-right: 20rpx;
+}
+.fans-img-box {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.fans-img {
+  width: 80rpx;
+  height: auto;
+  border-radius: 40rpx;
+}
+.fans-tag {
+  width: 70rpx;
+  margin: 20rpx auto;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #000;
+  // 动态标记点
+  background-color: #ffe046;
+}
+.fans-infos {
+  flex: 1;
+  width: 80rpx;
+}
+.fans-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+  color: $tips;
+}
+.fans-info.last {
+  margin-bottom: 0;
+}
+.fans-wrap-info {
+  flex-wrap: wrap;
+}
+.fans-userinfo {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rpx;
+}
+.fans-name {
+  margin-right: 10rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: $text;
+}
+.fans-relate-item {
+  padding-top: 10rpx;
+  font-size: 26rpx;
+}
+.fans-state {
+  margin: 0 7rpx;
+  padding: 1rpx 20rpx;
+  font-size: 24rpx;
+  color: $tag_color;
+  background-color: $tag_bg;
+}
+.fans-timeinfo {
+  font-size: 24rpx;
+  text-align: right;
+  white-space: nowrap;
+}
+.fans-ctrls {
+  flex: 1;
+  width: 80rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: 10rpx;
+  white-space: nowrap;
+}
+.fans-ctrl {
+  font-size: 24rpx;
+  padding: 5rpx 20rpx;
+  border: 1rpx solid $tips;
+  border-radius: 21rpx;
+}
+.fans-join-time,
+.fans-phone {
+  font-size: 24rpx;
+}

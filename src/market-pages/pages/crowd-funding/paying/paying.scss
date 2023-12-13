@@ -1,0 +1,35 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-page {
+  text-align: center;
+}
+
+.loading-icon-box {
+  margin: 160rpx auto 0 auto;
+  width: 88rpx;
+  height: 88rpx;
+}
+.loading-icon {
+  display: block;
+  width: 88rpx;
+  height: 88rpx;
+  animation: rotation 1s ease-in-out infinite;
+}
+
+.loading-title {
+  margin-top: 90rpx;
+  font-size: 38rpx;
+  font-weight: 500;
+  color: #4e8d06;
+}
+.loading-tips {
+  margin-top: 35rpx;
+  color: $tips;
+}

@@ -1,0 +1,54 @@
+page {
+  background-color: #fff;
+}
+.auth-info {
+  margin-top: 60rpx;
+  padding: 40rpx;
+  font-size: 32rpx;
+}
+.auth-ctrls {
+  margin-top: 200rpx;
+  padding: 30rpx 60rpx;
+}
+.auth-ctrl {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border: 1px solid $btnbg;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 1.4;
+  color: $btntext;
+  white-space: nowrap;
+  background-color: $btnbg;
+}
+.auth-ctrl:after {
+  outline: none;
+  border: 0;
+}
+.auth-ctrl.reject {
+  color: $tips;
+  border-color: $border_color;
+  background-color: $border_color;
+}
+
+.auth-lincese {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+.auth-lincese-select {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 10rpx;
+}
+.auth-lincese-select-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 10rpx;
+}
+.auth-lincese-entrance {
+  padding: 15rpx 0;
+  color: $val;
+}

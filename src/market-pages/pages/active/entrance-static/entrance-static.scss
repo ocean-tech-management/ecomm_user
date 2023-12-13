@@ -1,0 +1,220 @@
+
+.tab-timelimit-bar {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+.tab-timelimit-nodes {
+  display: flex;
+  height: 120rpx;
+  color: $text;
+  white-space: nowrap;
+}
+.tab-timelimit-node {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 166rpx;
+  min-width: 166rpx;
+  // max-width: 166rpx;
+  height: 100rpx;
+  border-right: 1px solid $border_color;
+  border-bottom: 1px solid $border_color;
+  box-sizing: border-box;
+}
+.tab-timelimit-node:last-child {
+  border-right: 0;
+}
+.tab-timelimit-node.active {
+  color: #fff;
+  background-color: $index_bg;
+}
+.tab-timelimit-node.active:after {
+  content: '';
+  position: absolute;
+  bottom: -7rpx;
+  left: 0;
+  right: 0;
+  width: 0;
+  left: 0;
+  margin: 0 auto;
+  border: 12rpx solid $index_bg;
+  border-left: 12rpx solid transparent;
+  border-top: 12rpx solid transparent;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+.tab-timelimit-node-status {
+  font-size: 24rpx;
+}
+
+
+.tab-timelimit-timeout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 20rpx 30rpx 20rpx;
+  font-size: 26rpx;
+  background-color: #fff;
+}
+.tab-timelimit-timeout-text {
+  margin-left: 10rpx;
+  font-size: 32rpx;
+}
+
+
+.rush-products {
+  height: 100%;
+  // overflow: hidden;
+}
+.rush-product-poster {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rush-padding {
+  height: 20rpx;
+}
+.rush-product {
+  display: flex;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.rush-product-img-box {
+  position: relative;
+  width: 280rpx;
+  height: 280rpx;
+  overflow: hidden;
+}
+.rush-product-sell-out {
+  // 已售罄的样式
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144rpx;
+  height: 144rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #fff;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,.5);
+}
+.rush-product-img {
+  display: block;
+  width: 280rpx;
+  height: auto;
+}
+.rush-product-info {
+  flex: 1;
+  width: 80rpx;
+  padding: 20rpx 20rpx 20rpx 30rpx;
+}
+.rush-product-title {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 32rpx;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.rush-product-subtitle {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: $subtitle_color;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rush-product-vals {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.rush-product-val {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: $val;
+}
+.rush-product-val-unactive {
+  margin-left: 10rpx;
+  text-decoration: line-through;
+  color: $tips;
+}
+
+.rush-product-val-ctrl {
+  flex: 1;
+  width: 80rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.rush-product-ctrls {
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+}
+.rush-product-ctrl {
+  padding: 10rpx 30rpx;
+  border: 1px solid $border_color;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  text-align: center;
+  &.active {
+    border-color: $btnbg;
+    color: #fff;
+    background-color: $btnbg;
+  }
+  &.disabled {
+    color: #fff;
+    background-color: #000;
+    opacity: .3;
+  }
+}
+.rush-product-ctrl.primary {
+  border-color: $btnbg;
+  color: #fff;
+  background-color: $btnbg;
+}
+
+/* 抢购剩余百分比 */
+.rush-timelimit-percent {
+  position: relative;
+  width: 200rpx;
+  height: 40rpx;
+  margin: 0 auto 0 0;
+  border: 2rpx solid $primary;
+  border-radius: 24rpx;
+  color: $primary;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.rush-timelimit-percent-rate {
+  height: 100%;
+  background-color: #e1e7fe;
+}
+.rush-timelimit-percent-val {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  z-index: 2;
+}

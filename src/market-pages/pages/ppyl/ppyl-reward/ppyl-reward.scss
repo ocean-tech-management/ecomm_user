@@ -1,0 +1,46 @@
+.reward-content {
+  height: 360rpx;
+  padding-top: 2rpx;
+  text-align: center;
+  color: $primary_text;
+  background-color: $primary;
+}
+.reward-content-title {
+  margin-top: 65rpx;
+  font-size: 42rpx;
+}
+.reward-content-tips {
+  margin-top: 20rpx;
+}
+
+.reward-infos {
+  margin: -160rpx 70rpx 20rpx 70rpx;
+  padding: 80rpx 30rpx;
+  border-radius: 33rpx;
+  text-align: center;
+
+  // 动态标记点
+  background-color: #fff;
+}
+.reward-val-box {
+  margin-top: 40rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: $val;
+}
+.reward-val {
+  font-size: 70rpx;
+  font-weight: 500;
+  // font-family: 'AGP';
+  vertical-align: baseline;
+}
+.reward-success {
+  margin-top: 200rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: $val;
+}
+.reward-success-tips {
+  margin-top: 30rpx;
+  color: $tips;
+}

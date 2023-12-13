@@ -1,0 +1,63 @@
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+$grey: #A3A3A3;
+.page-header {
+  position: relative;
+  height: 343rpx;
+  .page-header-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .page-header-card {
+    position: absolute;
+    top: 60rpx;
+    left: 30rpx;
+    right: 30rpx;
+    z-index: 1;
+    text-align: center;
+    padding: 60rpx 0;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 0px rgba(216,205,192,0.4);
+    border-radius: 18rpx;
+    .money, .title {
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .money {
+      @include ellipsis;
+      color: $secondary;
+    }
+    .title {
+      color: $grey;
+    }
+    .page-header-card-today {
+      .money {
+        font-size: 60rpx;
+      }
+      .title {
+        font-size: 26rpx;
+      }
+    }
+    .page-header-card-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50rpx;
+      .card-item {
+        overflow: hidden;
+        flex: 1;
+        text-align: center;
+        .money {
+          font-size: 34rpx;
+        }
+        .title {
+          font-size: 24rpx;
+        }
+      }
+    }
+  }
+}
+
+

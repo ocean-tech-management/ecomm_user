@@ -1,0 +1,38 @@
+page {
+  background-color: #fff;
+}
+.auth-info {
+  margin-top: 60rpx;
+  padding: 40rpx;
+  font-size: 32rpx;
+}
+.auth-info-tips {
+  margin-top: 15rpx;
+  font-size: 26rpx;
+  color: $tips;
+}
+.auth-ctrls {
+  margin-top: 200rpx;
+  padding: 30rpx 60rpx;
+}
+.auth-ctrl {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border: 1px solid $btnbg;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 1.4;
+  color: #fff;
+  white-space: nowrap;
+  background-color: $btnbg;
+}
+.auth-ctrl:after {
+  outline: none;
+  border: 0;
+}
+.auth-ctrl.reject {
+  color: $tips;
+  border-color: $border_color;
+  background-color: $border_color;
+}

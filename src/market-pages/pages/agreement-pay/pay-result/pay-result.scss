@@ -1,0 +1,97 @@
+
+
+page {
+  background-color: #fff;
+}
+
+.pay-result-banner {
+  padding: 100rpx 30rpx 100rpx 30rpx;
+  background-color: #fff;
+}
+.pay-result-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pay-success-icon {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+}
+.pay-result-title {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+}
+.pay-result-tips {
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  color: $h1;
+}
+
+.pay-result-btns {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.pay-result-btn {
+  margin: 0 20rpx;
+  padding: 16rpx 40rpx;
+  border: 2rpx solid $border_color;
+}
+.pay-result-btn.primary {
+  border: 2rpx solid $btnbg;
+  color: $btnbg;
+}
+
+
+
+// 收货地址等
+.order-user-bar {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.order-user-name {
+  width: 4em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.order-user-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+.order-user-base-info {
+  font-size: 28rpx;
+  color: $h2;
+}
+.order-user-realpay {
+  margin-top: 10rpx;
+  color: $val;
+}
+
+
+
+.pay-result-other {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.pay-result-other .kv-item {
+  font-size: 28rpx;
+}
+.pay-result-other .disabled {
+  border-color: $tips;
+  color: $tips;
+  background-color: $btnbg_disabled;
+}
+
+.bottom-btn {
+  border-radius: 0;
+  background-color: $theme_bg;
+}

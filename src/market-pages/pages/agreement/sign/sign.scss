@@ -1,0 +1,42 @@
+.agreement-title {
+  text-align: center;
+  padding: 30rpx 0;
+  font-weight: 500;
+  color: #000;
+}
+.agreement-content {
+  padding: 0 20rpx calc(120rpx);
+}
+.bottom-btns {
+  padding-top: 0;
+}
+.bottom-btn {
+  margin: 0;
+  padding-top: 20rpx;
+  background: transparent;
+  color: #282828;
+  &.disabled {
+    color: #7c7c7c;
+  }
+  &.btn-reject {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: 0;
+      width: 4rpx;
+      background-color: #ddd;
+    }
+  }
+}
+.default-view {
+  position: fixed;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 32rpx;
+  color: #000;
+}

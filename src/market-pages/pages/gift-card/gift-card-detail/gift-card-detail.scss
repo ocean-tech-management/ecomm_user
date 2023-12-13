@@ -1,0 +1,130 @@
+.gift-tips {
+  padding: 25rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: $theme_text;
+  background-color: $theme_bg;
+}
+
+
+.gift-type-title {
+  padding: 70rpx 40rpx 1rpx 40rpx;
+  font-size: 32rpx;
+}
+
+.goods-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  user-select: none;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.gift-select {
+  display: flex;
+  align-items: center;
+  width: 50rpx;
+  text-align: center;
+  /* height: 176rpx; */
+}
+.gift-select-icon {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.gift-status-box {
+  display: flex;
+  align-items: flex-start;
+  width: 55rpx;
+  // text-align: center;
+  margin-left: -5rpx;
+}
+.gift-status {
+  padding: 2rpx 4rpx;
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  color: #fff;
+  white-space: nowrap;
+  background-color: $tips;
+}
+.gift-img-box {
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+}
+.gift-img {
+  width: 160rpx;
+}
+.gift-info {
+  flex: 1;
+  width: 80rpx;
+}
+.gift-unactive {
+  color: $tips;
+  .gift-val {
+    color: $tips;
+  }
+}
+.gift-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.gift-property {
+  position: relative;
+  display: flex;
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: $tips;
+}
+.gift-property-text-static {
+  max-width: 100%;
+  padding: 6rpx 10rpx 6rpx 10rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  // 动态标记点
+  background-color: #f4f4f4;
+}
+.gift-property-count-static {
+  margin-left: 10rpx;
+  padding: 6rpx 10rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  // 动态标记点
+  background-color: #f4f4f4;
+}
+
+.gift-number-ctrls-box {
+  display: flex;
+  margin-top: 30rpx;
+}
+.sku-number-ctrls {
+  display: flex;
+  align-items: center;
+  border: 1rpx solid $tips;
+}
+.sku-number-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20rpx;
+  padding: 6rpx 20rpx;
+  font-size: 24rpx;
+  white-space: nowrap;
+}
+
+.gift-used-sign {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 116rpx;
+  height: 123rpx;
+}

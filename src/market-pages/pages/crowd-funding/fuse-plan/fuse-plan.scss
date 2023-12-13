@@ -1,0 +1,27 @@
+.fuse-plan {
+  position: relative;
+}
+
+.fuse-plan-intro {
+  display: block;
+  width: 750rpx;
+  height: 2290rpx;
+  margin: 0 auto;
+}
+
+.fuse-plan-ctrls {
+  position: absolute;
+  top: 2080rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 35rpx;
+  z-index: 1;
+}
+.fuse-plan-ctrl {
+  width: 280rpx;
+  height: 90rpx;
+  margin: 0 30rpx;
+  opacity: 0;
+}

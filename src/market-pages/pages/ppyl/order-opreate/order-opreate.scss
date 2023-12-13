@@ -1,0 +1,142 @@
+
+/* 收货人信息 */
+
+.order-user-bar {
+  display: flex;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+}
+.order-user-name {
+  width: 4em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.order-user-infos {
+  flex: 1;
+  width: 80rpx;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+.order-user-info {
+  margin-top: 20rpx;
+  word-break: break-all;
+}
+.order-user-base-info {
+  font-size: 28rpx;
+  color: $h2;
+}
+.order-user-info:first-child {
+  margin-top: 0;
+}
+.order-user-tag {
+  height: 28rpx;
+  padding: 2rpx 9rpx;
+  border-radius: 16rpx;
+  font-size: 20rpx;
+  color: $primary_text;
+  background-color: $primary;
+}
+.order-user-more {
+  display: block;
+  width: 24rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+.order-address-border {
+  display: block;
+  width: 750rpx;
+  height: 10rpx;
+}
+
+
+.order-total {
+  margin: 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.order-total-info {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.order-select-info {
+  margin-top: 25rpx;
+  padding: 30rpx;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  background-color: #fff3ed;
+}
+.order-select-num {
+  margin: 0 10rpx;
+  color: $val;
+}
+
+.orders {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.order {
+  width: 200rpx;
+  margin-right: 30rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &.active {
+    .order-img-box:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 4rpx solid $val;
+      border-radius: 6rpx;
+      box-sizing: border-box;
+    }
+  }
+}
+.order-img-box {
+  position: relative;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 6rpx;
+}
+.order-img {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+}
+.order-price {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  // font-family: 'AGP';
+  font-weight: 500;
+}
+.order-price-unactive {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  text-decoration: line-through;
+  color: $tips;
+}
+
+.shipping-btn {
+  margin: 40rpx;
+  padding: 20rpx;
+  border-radius: 41rpx;
+  text-align: center;
+  font-weight: 500;
+  color: $btntext;
+  background-color: $btnbg;
+  &.disabled {
+    color: #fff;
+    background-color: $tips;
+  }
+}

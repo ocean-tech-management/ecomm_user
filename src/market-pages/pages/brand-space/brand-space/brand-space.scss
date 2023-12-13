@@ -1,0 +1,96 @@
+.tab-page-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.brand-bg-box {
+  position: relative;
+  width: 750rpx;
+  height: 432rpx;
+}
+.brand-bg {
+  display: block;
+  width: 750rpx;
+  height: auto;
+}
+.brand-bg-btn {
+  position: absolute;
+  bottom: 50rpx;
+  left: 50rpx;
+  padding: 12rpx 30rpx;
+  font-size: 24rpx;
+  color: #fff;
+  // 动态标记点
+  background-color: rgba(0,0,0,.8);
+}
+
+
+// 品牌下的商品栏
+.brand-products {
+  height: 530rpx;
+  overflow-y: hidden;
+}
+.brand-product-list {
+  display: flex;
+  width: 100%;
+  height: 550rpx;
+  overflow-x: auto;
+}
+
+// 列表
+.product {
+  width: 260rpx;
+  min-width: 260rpx;
+  max-width: 260rpx;
+  margin: 30rpx;
+  margin-right: 0;
+  text-align: center;
+  overflow: hidden;
+  &:last-child {
+    padding-right: 40rpx;
+  }
+}
+.product-img-box {
+  position: relative;
+  width: 260rpx;
+  height: 260rpx;
+}
+.product-img {
+  width: 260rpx;
+  height: 260rpx;
+}
+
+.product-info {
+  padding: 30rpx 0;
+}
+.product-title {
+  display: -webkit-box;
+  height: 2.8em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: $tips;
+  overflow: hidden;
+}
+
+.product-val-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 15rpx;
+  white-space: nowrap;
+}
+.product-val {
+  font-size: 34rpx;
+  // font-family: 'AGP';
+  font-weight: 500;
+}
+.product-val-unactive {
+  margin-left: 10rpx;
+  text-decoration: line-through;
+  font-size: 22rpx;
+  color: $tips;
+}

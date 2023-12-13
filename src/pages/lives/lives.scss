@@ -1,0 +1,59 @@
+
+.live-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.live-list::after {
+  content: '';
+  display: block;
+  width: 1rpx;
+}
+.live-item {
+  width: 328rpx;
+  max-width: 328rpx;
+  min-width: 328rpx;
+  // padding: 20rpx 0;
+  margin: 20rpx;
+  border-radius: 8rpx;
+  white-space: nowrap;
+  background-color: #fff;
+  overflow: hidden;
+}
+.live-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 328rpx;
+  height: 328rpx;
+  overflow: hidden;
+  background-color: #ccc;
+}
+.live-img {
+  width: 328rpx;
+  height: auto;
+}
+.replay-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8rpx;
+  color: #fff;
+  background-color: $tips;
+  border-radius: 0 0 8rpx 0;
+}
+.live-info {
+  padding: 20rpx;
+}
+.live-name {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.live-user {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  color: $tips;
+  overflow: hidden;
+}

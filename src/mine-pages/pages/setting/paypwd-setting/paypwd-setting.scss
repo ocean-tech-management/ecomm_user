@@ -1,0 +1,49 @@
+.page-forms {
+  margin-bottom: 30rpx;
+  padding: 25rpx 40rpx;
+  background-color: #fff;
+}
+.page-form-item {
+  position: relative;
+  display: flex;
+  margin-top: 25rpx;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: $border_color;
+    transform: scaleY(.5);
+  }
+  &:last-child:after {
+    opacity: 0;
+  }
+}
+
+// 表单项目
+.page-label {
+  width: 180rpx;
+  padding: 25rpx 7rpx;
+}
+.page-input {
+  flex: 1;
+  height: 1.4em;
+  padding: 25rpx;
+  line-height: 1.4em;
+}
+
+
+.page-ctrl {
+  padding: 20rpx 30rpx;
+  margin: 70rpx 60rpx;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: $btntext;
+  background-color: $btnbg;
+}
