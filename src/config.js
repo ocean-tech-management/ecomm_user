@@ -39,7 +39,7 @@ const toastDelay = 180;
 // 接口地址
 // #ifdef H5
 const serviceInfo = {
-  url: "https://kxadmin.d55001.com/api/v1"
+  url: "https://kxadmin.dy5001.com/api/v1"
 };
 // #endif
 // #ifndef H5
